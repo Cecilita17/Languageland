@@ -8,27 +8,27 @@
     height: 100vh;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 0.3fr 3fr 0.3fr;
+    grid-template-rows: 0.5fr 1.7fr 1.7fr 0.8fr 0.3fr;
     grid-template-areas:"header"
                         "main"
+                        "section1"
+                        "section2"
                         "footer";
 }
+
 .header{
     grid-area: header;
-    background-color: rgb(0, 0, 0);
-    width: auto;
-    height: auto;
-    padding-left: 15px;
-    color: rgb(254, 249, 249);
-    font-family: 'Ingrid Darling', cursive;
-    text-align: center;
-    font-size: 1.4rem;
+    background-color: rgb(2, 2, 2);
+    min-width: auto;
+    position: sticky;
+    top: 0;
+    z-index: 3;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
-    position: sticky;
-    top: 0;
+    list-style: none;
+    
 }
 
 .titulo{
@@ -36,7 +36,7 @@
     
 }
 
-/* menu desplegable*/
+/*menu desplegable*/
 
 nav{
     justify-self: flex-end;
@@ -89,7 +89,7 @@ ul ul li a{
     color: white;
     background-color: black;
     width:100vh;
-    padding:5px;
+    padding:4px;
     margin-left: 10px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1rem;
@@ -111,7 +111,7 @@ ul li a{
 }
 
 .imgMenu{
-    width: 45%;
+    width: 35%;
     position: relative;
     z-index: 2;
     align-self: flex-end;
@@ -120,7 +120,7 @@ ul li a{
 }
 
 .logo{
-    width: 60%;
+    width: 45%;
 }
 
 
@@ -149,7 +149,7 @@ main{
     flex-flow: column wrap;
     justify-content: space-around;
     align-items: center;
-    min-height: 500px;
+    min-height: auto;
     min-width: auto;
 }
 
@@ -173,15 +173,12 @@ main{
 /* imágenes de las banderas*/
 
 .imagenes{
-    height: 200px;
+    height: auto;
     background-color: none;
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center; 
-    
-
-
 }
 
 .imagenes div div{
@@ -235,10 +232,11 @@ main{
 }
 
 
-/* section medio */
+/* section1 */
 
-.medio{
-    min-height: 1400px;
+.section1{
+    grid-area: section1;
+    min-height: fit-content;
     padding-left: 8%;
     padding-right: 8%;
     padding-top: 5%;
@@ -251,17 +249,17 @@ main{
     
 }
 
-.medio h1{
+.section1 h1{
     text-align: center ;
     font-size: 1.7rem;
 }
 
-.medio article h2{
+.section1 article h2{
     margin-bottom: 5%;
     
 }
 
-.medio article p{
+.section1 article p{
     margin-bottom: 7%;
     
 }
@@ -283,31 +281,33 @@ article div{
 }
 
 
-/* section final*/
+/* section2*/
 
-.final{
+.section2{
+    grid-area: section2;
     min-height: 300px;
+    min-width: auto;
     background-color: rgb(147, 140, 140);
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-evenly;
 }
-.final h1{
+.section2 h1{
     font-size: 1.7rem;
     text-transform: uppercase;
     text-align: center;
 }
 
-.final h2{
+.section2 h2{
     text-align: center;
 }
 /*Footer*/
 
 footer{
+    grid-area: footer;
     background-color: rgb(72, 72, 75);
     padding: 15px;
-    width: auto;
-    grid-area: footer;
+    min-width: auto;
     display: flex;
     justify-content: center;
     align-content: flex-end !important;
