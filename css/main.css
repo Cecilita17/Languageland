@@ -322,7 +322,7 @@ ul li a{
 }
 
 .logo{
-    width: 45%;
+    width: 55%;
 }
 
 
@@ -359,7 +359,7 @@ main{
     margin-top: 20% !important;
     margin: 10px;
     padding: 1px;
-    font-size: 2.1rem;
+    font-size: 4rem;
     text-align: center;
     background-color: none;
 }
@@ -367,8 +367,9 @@ main{
 .principio h2{
     background-color: none;
     margin: 10px;
+    margin-bottom: 3%;
     padding: 1px;
-    font-size: 1.2rem;
+    font-size: 2.5rem;
     text-align: center;
 
 }
@@ -402,7 +403,7 @@ main{
     text-align: left;
     list-style: none;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1rem;
+    font-size: 1.5rem;
     
     
 }
@@ -410,27 +411,27 @@ main{
 
  
 .imgUk{
-    width: 40%
+    width: 30%
 }
 
 .imgIt{
-    width: 40%
+    width: 30%
 }
 
 .imgFr{
-    width: 40%
+    width: 30%
 }
 
 .imgGe{
-    width: 40%
+    width: 30%
 }
 
 .imgHo{
-    width: 40%
+    width: 30%
 }
 
 .imgRu{
-    width: 40%
+    width: 30%
 }
 
 
@@ -439,6 +440,8 @@ main{
 .section1{
     grid-area: section1;
     min-height: fit-content;
+    min-width: auto;
+    width: 100%;
     padding-left: 8%;
     padding-right: 8%;
     padding-top: 5%;
@@ -453,27 +456,48 @@ main{
 
 .section1 h1{
     text-align: center ;
-    font-size: 1.7rem;
+    font-size: 3rem;
+    margin-bottom: 2%;
 }
-
-.section1 article h2{
-    margin-bottom: 5%;
+section article{
+    
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center !important;
+}
+section article div{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center !important;
+    align-items: center;
     
 }
 
-.section1 article p{
-    margin-bottom: 7%;
+
+.section1 article div h2{
+    margin-top: 10%;
+    margin-bottom: 3%;
+    font-size: 2.4rem;
+    
+}
+
+.section1 article div p{
+    margin-bottom: 3%;
+    margin-left: 4%;
+    margin-right: 4%;
+    font-size: 1.6rem;
     
 }
 
 .talking{
-    width: 100%;
+    width: 90%;
 }
 .ritmo{
-    width: 100%;
+    width: 90%;
 }
 .ayuda{
-    width: 100%;
+    width: 90%;
 }
 
 article div{
@@ -488,7 +512,8 @@ article div{
 .section2{
     grid-area: section2;
     min-height: 300px;
-    min-width: auto;
+    min-width: fit-content;
+    width: 100%;
     padding-left: 8%;
     padding-right: 8%;
     background-color: rgb(147, 140, 140);
@@ -516,13 +541,13 @@ footer{
     display: flex;
     justify-content: center;
     align-content: flex-end !important;
-    gap: 2px;
+    gap: 5px;
  
 }
 
 
 footer img{
-    width: 5%;
+    width: 4%;
     
 }
 
