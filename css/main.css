@@ -17,16 +17,47 @@
 }
 
 @media only screen and (min-width: 600px){
-    .section2{
-        background-color: antiquewhite !important;
-        min-width: fit-content;
+    
+    /*section2 */
 
+    .section2{
+        background-color: rgb(144, 27, 27) !important;
+        min-width: 100% !important;
+        
+    }
+    .section2 h1{
+        font-size: 3rem !important;
+        color: rgb(254, 254, 254);
+        padding-bottom: 2%;
+        
+    }
+
+    .section2 h2{
+        font-size: 1.9rem !important;
+        color: rgb(255, 255, 255) !important;
+    }
+
+    /*Footer*/
+
+    footer{
+        gap: 7px !important;
+        background-color: white !important;
+    }
+
+
+    footer img{
+        width: 2% !important;
+    
     }
 }
 
 @media only screen and (min-width: 900px){
     
     /*menu desktop*/
+
+    .stickyMenu{
+        display: flex !important;
+    }
 
     ul li:hover ul{
         display: none;
@@ -113,8 +144,8 @@
         color: black !important;
         background-color: rgb(0, 0, 0) !important;
         background-size: cover;
-        min-width: 100vh !important;
-        min-height: 1500px !important;
+        min-height: 1800px !important;
+        min-width: auto !important;
         padding-left: 2% !important;
         padding-right: 2% !important;
         padding-bottom: 3%;
@@ -126,29 +157,36 @@
         color: white !important;
         font-size: 3rem !important;
         margin-bottom: 3%;
+        margin-top: 0% !important;
     }
 
     .section1 article{
         background-color: rgb(255, 255, 255);
-        min-height: 400px !important;
+        min-height: 450px !important;
         display: flex;
         flex-flow: row-reverse nowrap;
+        justify-content: center !important;
+        align-items: center !important;
         
     }
 
     .articleMedio{
         display: flex;
         flex-flow: row nowrap !important;
-        justify-content: flex-start;
+        justify-content: center !important;
         align-items: space-between !important;
         
     }
     
 
     .section1 article div{
-        margin-left: 3% ;
+        background-color: rgb(255, 255, 255);
+        padding-left: 3% ;
+        margin-bottom: 0%;
         display: flex;
         flex-flow: column nowrap;
+        justify-content: center !important;
+        align-items: center !important;
 
 
     }
@@ -158,13 +196,10 @@
     }
 
     .divMedio{
-        margin-right: 20% !important;
+        padding-right: 17% !important;
     }
 
-    .divRitmo{
-        margin-right: 9%;
-    }
-
+    
     .section1 article div h2{
         font-size: 2rem;
         text-align: left;
@@ -189,8 +224,9 @@
     /*section2 */
 
     .section2{
-        background-color: rgb(10, 10, 10) !important;
-        padding: 10% !important;
+        background-color: rgb(144, 27, 27) !important;
+        min-width: 100% !important;
+        
     }
     .section2 h1{
         font-size: 3rem !important;
@@ -239,6 +275,10 @@
 }
 
 /*menu desplegable*/
+
+.stickyMenu{
+    display: none;
+}
 
 nav{
     justify-self: flex-end;
@@ -330,8 +370,8 @@ ul li a{
 
 main{
     grid-area: main;
-    min-height: auto;
-    min-width: 100vh !important;
+    min-height: auto !important;
+    min-width: auto !important;
     background-color: rgb(252, 252, 252);
     display: flex;
     flex-flow: row wrap;
@@ -359,7 +399,7 @@ main{
     margin-top: 20% !important;
     margin: 10px;
     padding: 1px;
-    font-size: 4rem;
+    font-size: 3.5rem;
     text-align: center;
     background-color: none;
 }
@@ -367,9 +407,10 @@ main{
 .principio h2{
     background-color: none;
     margin: 10px;
-    margin-bottom: 3%;
+    margin-top: 2%;
+    margin-bottom: 4%;
     padding: 1px;
-    font-size: 2.5rem;
+    font-size: 2.1rem;
     text-align: center;
 
 }
@@ -440,10 +481,9 @@ main{
 .section1{
     grid-area: section1;
     min-height: fit-content;
-    min-width: auto;
-    width: 100%;
-    padding-left: 8%;
-    padding-right: 8%;
+    min-width: fit-content;
+    padding-left: 1%;
+    padding-right: 1%;
     padding-top: 5%;
     background-color: rgb(45, 42, 42);
     color: rgb(206, 200, 200);
@@ -458,19 +498,24 @@ main{
     text-align: center ;
     font-size: 3rem;
     margin-bottom: 2%;
+    margin-top: 8%;
 }
+
 section article{
     
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center !important;
+    padding-left: 7%;
+    padding-right: 7%;
 }
 section article div{
     display: flex;
     flex-flow: column nowrap;
     justify-content: center !important;
     align-items: center;
+    margin-bottom: 7%;
     
 }
 
@@ -478,26 +523,25 @@ section article div{
 .section1 article div h2{
     margin-top: 10%;
     margin-bottom: 3%;
-    font-size: 2.4rem;
+    font-size: 2rem;
+    text-align: center;
     
 }
 
 .section1 article div p{
     margin-bottom: 3%;
-    margin-left: 4%;
-    margin-right: 4%;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     
 }
 
 .talking{
-    width: 90%;
+    width: 100%;
 }
 .ritmo{
-    width: 90%;
+    width: 100%;
 }
 .ayuda{
-    width: 90%;
+    width: 100%;
 }
 
 article div{
@@ -513,10 +557,8 @@ article div{
     grid-area: section2;
     min-height: 300px;
     min-width: fit-content;
-    width: 100%;
-    padding-left: 8%;
-    padding-right: 8%;
-    background-color: rgb(147, 140, 140);
+    background-color: rgb(255, 253, 253);
+    color: rgb(167, 167, 167);
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-evenly;
@@ -535,13 +577,14 @@ article div{
 
 footer{
     grid-area: footer;
-    background-color: rgb(72, 72, 75);
+    background-color: rgb(68, 68, 68);
     padding: 15px;
     min-width: auto;
     display: flex;
     justify-content: center;
     align-content: flex-end !important;
     gap: 5px;
+    
  
 }
 
