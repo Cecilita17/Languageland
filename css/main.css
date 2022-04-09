@@ -19,9 +19,7 @@
 @media only screen and (min-width: 600px){
     
     /*section2 */
-    .section1{
-        background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgb(181, 178, 178), white)
-    }
+    
     .section2{
         background-color: rgb(255, 254, 254) !important;
         min-width: 100% !important;
@@ -29,14 +27,13 @@
     }
     .section2 h1{
         font-size: 3rem !important;
-        color: rgb(147, 147, 147);
         padding-bottom: 2%;
         
     }
 
     .section2 h2{
         font-size: 1.9rem !important;
-        color: rgb(147, 147, 147) !important;
+        color: white !important;
     }
 
     /*Footer*/
@@ -116,19 +113,23 @@
     /* section principio*/
 
     .principio{
-        min-width: 100vh !important;
-        padding-bottom: 2%;
+        min-width: 100% !important;
+        padding-bottom: 2% !important;
     }
+
+    
     .principio h1{
         font-size: 4rem !important;
         text-align: center;
-        padding-left: 3% !important;
-        padding-right: 3% !important;
+        
+
         
     }
     .principio h2{
         font-size: 2rem !important;
-        padding-bottom: 2% !important;
+        
+        margin: 0% !important;
+        padding: 3% !important;
     }
 
     .principio div div div{
@@ -185,7 +186,7 @@
         min-width: auto !important;
         padding-left: 2% !important;
         padding-right: 2% !important;
-        padding-bottom: 3%;
+        padding-bottom: 3% !important;
         display: flex;
         flex-flow: row nowrap;
     }
@@ -199,6 +200,7 @@
 
     .section1 article{
         background-color: rgb(255, 255, 255);
+        color: black !important;
         min-height: 450px !important;
         display: flex;
         flex-flow: row-reverse nowrap;
@@ -240,11 +242,13 @@
     .section1 article div h2{
         font-size: 2.3rem !important;
         text-align: left;
+        color: black !important;
         
     }
 
     .section1 article div p{
         font-size: 1.6rem !important;
+        color: black !important;
     }
 
     .talking{
@@ -435,10 +439,13 @@ main{
 }
 
 .principio h1{
-    margin-top: 20% !important;
+    margin-top: 10% !important;
+    padding-bottom: 5% !important;
+    padding-left: 3% !important;
+    padding-right: 3% !important;
     margin: 10px;
     padding: 1px;
-    font-size: 3rem;
+    font-size: 2.7rem;
     text-align: center;
     background-color: none;
 }
@@ -447,7 +454,7 @@ main{
     background-color: none;
     margin: 10px;
     margin-top: 2%;
-    margin-bottom: 4%;
+    margin-bottom: 6%;
     padding: 1px;
     font-size: 1.5rem;
     text-align: center;
@@ -525,7 +532,7 @@ main{
     padding-left: 1%;
     padding-right: 1%;
     padding-top: 5%;
-    background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgb(181, 178, 178), white);
+    background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgb(108, 108, 108), rgb(168, 166, 166), white);
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-around;
@@ -565,12 +572,14 @@ section article div{
     margin-bottom: 3%;
     font-size: 1.5rem;
     text-align: center;
+    color: white;
     
 }
 
 .section1 article div p{
     margin-bottom: 3%;
     font-size: 1.2rem;
+    color: white;
     
 }
 
