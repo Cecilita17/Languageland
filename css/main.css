@@ -19,22 +19,24 @@
 @media only screen and (min-width: 600px){
     
     /*section2 */
-
+    .section1{
+        background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgb(181, 178, 178), white)
+    }
     .section2{
-        background-color: rgb(144, 27, 27) !important;
+        background-color: rgb(255, 254, 254) !important;
         min-width: 100% !important;
         
     }
     .section2 h1{
         font-size: 3rem !important;
-        color: rgb(254, 254, 254);
+        color: rgb(147, 147, 147);
         padding-bottom: 2%;
         
     }
 
     .section2 h2{
         font-size: 1.9rem !important;
-        color: rgb(255, 255, 255) !important;
+        color: rgb(147, 147, 147) !important;
     }
 
     /*Footer*/
@@ -259,20 +261,20 @@
     /*section2 */
 
     .section2{
-        background-color: rgb(144, 27, 27) !important;
+        background-color: rgb(255, 255, 255) !important;
         min-width: 100% !important;
         
     }
     .section2 h1{
         font-size: 3rem !important;
-        color: rgb(254, 254, 254);
+        color: rgb(147, 147, 147) !important;
         padding-bottom: 2%;
         
     }
 
     .section2 h2{
         font-size: 1.9rem !important;
-        color: rgb(255, 255, 255) !important;
+        color: rgb(147, 147, 147) !important;
     }
 
     /*Footer*/
@@ -419,7 +421,7 @@ main{
 
 .principio{
     background-color: none;
-    background-image: url(../img/bg4.png);
+    background-image: url(../img/bg6.png);
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
@@ -429,6 +431,7 @@ main{
     align-items: center;
     min-height: auto;
     min-width: auto;
+    
 }
 
 .principio h1{
@@ -475,7 +478,8 @@ main{
 }
 
 .imagenes div div a{
-    color: rgb(255, 255, 255);
+    color: rgb(247, 240, 240);
+    
     text-decoration: none;
     text-align: left;
     list-style: none;
@@ -521,8 +525,7 @@ main{
     padding-left: 1%;
     padding-right: 1%;
     padding-top: 5%;
-    background-color: rgb(45, 42, 42);
-    color: rgb(206, 200, 200);
+    background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgb(181, 178, 178), white);
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-around;
@@ -535,6 +538,7 @@ main{
     font-size: 3rem;
     margin-bottom: 2%;
     margin-top: 8%;
+    color: rgb(255, 254, 254);
 }
 
 section article{
