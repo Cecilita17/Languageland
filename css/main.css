@@ -643,3 +643,107 @@ footer img{
     
 }
 
+
+/* LINK A INGLES*/
+
+/*sectionIdiomas1*/
+
+.sectionIdiomas1{
+    background-image: linear-gradient(to bottom, rgb(172, 182, 195), rgb(201, 218, 217), rgb(255, 255, 255));
+    
+    
+}
+.sectionIdiomas1 div{
+    background-image: url(../img/runido.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: fixed;
+    height: 400px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center !important;
+}
+
+.sectionIdiomas1 div h1{
+    text-align: center;
+    font-size: 3rem;
+    color: rgb(94, 83, 64);
+    padding-left: 7%;
+    padding-right: 7%;
+    padding-bottom: 5%;
+    
+    
+}
+
+.sectionIdiomas1 div h2{
+    text-align: center;
+    font-size: 1.5rem;
+    color: rgb(94, 83, 64);
+    padding-left: 7%;
+    padding-right: 7%;
+    
+}
+
+.sectionIdiomas1 article{
+    border-top: 2px solid rgb(31, 23, 8);
+    
+    padding: 3% 10%;
+    margin: 3% 10%;
+}
+
+.sectionIdiomas1 article h2{
+    text-align: center;
+    color: rgb(94, 83, 64);
+    padding-bottom: 6%;
+}
+
+.sectionIdiomas1 article p{
+    font-size: 1rem;
+}
+
+/*sectionIdiomas2*/
+
+.sectionIdiomas2{
+    
+    background-color: white;
+    padding: 10% 10%;
+    color: rgb(248, 244, 244);
+}
+
+.sectionIdiomas2 article{
+    background-color: rgb(152, 149, 149);
+    padding: 10%;
+    border: 2px solid none);
+    border-radius: 50px;
+}
+
+.sectionIdiomas2 article h1{
+    font-size: 2rem;
+    text-align: center;
+    padding-bottom: 8%;
+}
+
+.sectionIdiomas2 article p{
+    font-size: 1rem;
+    padding-bottom: 4%;
+}
+
+
+
+/*sectionIdiomas3*/
+
+.sectionIdiomas3{
+    background-color: rgb(87, 87, 87);
+    padding: 3% 3%;
+    color: white;
+}
+
+.sectionIdiomas3 h1{
+    text-align: center;
+    padding: 3%;
+}
+
+.sectionIdiomas3 p{
+    padding: 3%;
+}
