@@ -653,9 +653,10 @@ footer img{
     
     
 }
-.sectionIdiomas1 div{
-    background-image: url(../img/runido.png);
-    background-size: cover;
+
+.divIn{
+    background-image: url(../img/runido.png) !important;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: fixed;
     height: 400px;
@@ -665,7 +666,7 @@ footer img{
     align-items: center !important;
 }
 
-.sectionIdiomas1 div h1{
+.divIn h1{
     text-align: center;
     font-size: 3rem;
     color: rgb(94, 83, 64);
@@ -676,7 +677,7 @@ footer img{
     
 }
 
-.sectionIdiomas1 div h2{
+.divIn h2{
     text-align: center;
     font-size: 1.5rem;
     color: rgb(94, 83, 64);
@@ -714,7 +715,7 @@ footer img{
 .sectionIdiomas2 article{
     background-color: rgb(152, 149, 149);
     padding: 10%;
-    border: 2px solid none);
+    border: 2px solid none;
     border-radius: 50px;
 }
 
@@ -746,4 +747,169 @@ footer img{
 
 .sectionIdiomas3 p{
     padding: 3%;
+}
+
+/*LINK A ALEMAN cambios*/
+.divAl{
+    background-image: url(../img/alemania.jpeg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: fixed;
+    height: 400px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center !important;
+}
+
+.divAl h1{
+    text-align: center;
+    font-size: 3rem;
+    color: rgb(94, 83, 64);
+    padding-left: 7%;
+    padding-right: 7%;
+    padding-bottom: 5%;
+    
+    
+}
+
+.divAl h2{
+    text-align: center;
+    font-size: 1.5rem;
+    color: rgb(94, 83, 64);
+    padding-left: 7%;
+    padding-right: 7%;
+    
+}
+
+/* LINK FRANCES cambios*/
+.divFr{
+    background-image: url(../img/francia.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: fixed;
+    height: 400px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center !important;
+}
+
+.divFr h1{
+    text-align: center;
+    font-size: 3rem;
+    color: rgb(94, 83, 64);
+    padding-left: 7%;
+    padding-right: 7%;
+    padding-bottom: 5%;
+    
+    
+}
+
+.divFr h2{
+    text-align: center;
+    font-size: 1.5rem;
+    color: rgb(94, 83, 64);
+    padding-left: 7%;
+    padding-right: 7%;
+    
+}
+
+/* LINK ITALIANO cambios*/
+.divIt{
+    background-image: url(../img/italia.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: fixed;
+    height: 400px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center !important;
+}
+
+.divIt h1{
+    text-align: center;
+    font-size: 3rem;
+    color: rgb(94, 83, 64);
+    padding-left: 7%;
+    padding-right: 7%;
+    padding-bottom: 5%;
+    
+    
+}
+
+.divIt h2{
+    text-align: center;
+    font-size: 1.5rem;
+    color: rgb(94, 83, 64);
+    padding-left: 7%;
+    padding-right: 7%;
+    
+}
+
+/* LINK RUSO cambios*/
+.divRu{
+    background-image: url(../img/rusia.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: fixed;
+    height: 400px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center !important;
+}
+
+.divRu h1{
+    text-align: center;
+    font-size: 3rem;
+    color: rgb(94, 83, 64);
+    padding-left: 7%;
+    padding-right: 7%;
+    padding-bottom: 5%;
+    
+    
+}
+
+.divRu h2{
+    text-align: center;
+    font-size: 1.5rem;
+    color: rgb(94, 83, 64);
+    padding-left: 7%;
+    padding-right: 7%;
+    
+}
+
+/* LINK HOLANDES cambios*/
+.divHo{
+    background-image: url(../img/holanda.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: fixed;
+    height: 400px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center !important;
+}
+
+.divHo h1{
+    text-align: center;
+    font-size: 3rem;
+    color: rgb(94, 83, 64);
+    padding-left: 7%;
+    padding-right: 7%;
+    padding-bottom: 5%;
+    
+    
+}
+
+.divHo h2{
+    text-align: center;
+    font-size: 1.5rem;
+    color: rgb(94, 83, 64);
+    padding-left: 7%;
+    padding-right: 7%;
+    
 }
