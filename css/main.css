@@ -850,11 +850,11 @@ footer img{
 
 /* LINK RUSO cambios*/
 .divRu{
-    background-image: url(../img/rusia.png);
-    background-size: cover;
+    background-image: url(../img/rusia.jpg);
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: fixed;
-    height: 400px;
+    height: 600px;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
@@ -864,7 +864,7 @@ footer img{
 .divRu h1{
     text-align: center;
     font-size: 3rem;
-    color: rgb(94, 83, 64);
+    color: rgb(0, 0, 0);
     padding-left: 7%;
     padding-right: 7%;
     padding-bottom: 5%;
@@ -875,7 +875,7 @@ footer img{
 .divRu h2{
     text-align: center;
     font-size: 1.5rem;
-    color: rgb(94, 83, 64);
+    color: rgb(0, 0, 0);
     padding-left: 7%;
     padding-right: 7%;
     
