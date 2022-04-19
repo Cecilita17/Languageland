@@ -5,23 +5,24 @@
 }
 
 .container{
-    position: relative;
-    height: 100vh !important;
+    height: 100vh;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 0.5fr 1.7fr 1.7fr 0.8fr 0.3fr;
     grid-template-areas:"header"
-                        "main"
+                        "mainI"
                         "section1"
                         "section2"
                         "footer";
+    
 }
+
 
 /* HEADER */
 
 .header{
     grid-area: header;
-    background-color: rgb(2, 2, 2);
+    background-color: black;
     min-width: auto;
     position: sticky;
     top: 0;
@@ -118,7 +119,7 @@ ul li a{
 }
 
 .imgMenu{
-    width: 35%;
+    width: 25%;
     position: relative;
     z-index: 2;
     align-self: flex-end;
@@ -127,20 +128,18 @@ ul li a{
 }
 
 .logo{
-    width: 55%;
+    width: 35%;
+    padding-left: 15px;
 }
 
 
-/* MAIN */
+/* MAIN- index */
 
-main{
-    grid-area: main;
+.mainI{
+    grid-area: mainI;
     min-height: auto;
     min-width: auto;
     background-color: white;
-    
-    
-
 }
 
 
@@ -161,22 +160,36 @@ main{
 
 .principio h1{
     margin-top: 10% ;
-    padding-bottom: 5% ;
+    padding-bottom: 4% ;
     padding-left: 3% ;
     padding-right: 3% ;
     font-size: 2.7rem;
     text-align: center;
     background-color: none;
+    text-shadow: 0 2px 3px rgb(0 0 0 / 60%);
+    font-family: 'Kanit', sans-serif;
 }
 
-.principio h2{
+.principio h2:first-of-type{
     background-color: none;
-    margin: 10px;
-    margin-top: 2%;
-    margin-bottom: 6%;
+    margin: 2% 5%;
     padding: 1px;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+    text-shadow: 0 2px 3px rgb(0 0 0 / 60%);
     text-align: center;
+    font-family: 'Kanit', sans-serif;
+
+}
+
+.principio h2:last-of-type{
+    background-color: none;
+    margin-bottom: 3%;
+    padding: 1px;
+    font-size: 1rem;
+    text-align: center;
+    color:  #FF8E00;
+    text-shadow: 0 2px 3px rgb(0 0 0 / 60%);
+    font-family: 'Kanit', sans-serif;
 
 }
 /* imágenes de las banderas*/
@@ -245,12 +258,10 @@ main{
 }
 
 
-/* SECTION1 */
+/* SECTION1- index */
 
 .section1{
     grid-area: section1;
-    min-height: fit-content;
-    min-width: fit-content;
     padding-left: 1%;
     padding-right: 1%;
     padding-top: 5%;
@@ -262,7 +273,7 @@ main{
     
 }
 
-.section1 h1{
+.section1 h3{
     text-align: center ;
     font-size: 2rem;
     margin-bottom: 2%;
@@ -270,7 +281,7 @@ main{
     color: rgb(255, 254, 254);
 }
 
-section article{
+.section1 article{
     
     display: flex;
     flex-flow: column nowrap;
@@ -279,7 +290,7 @@ section article{
     padding-left: 7%;
     padding-right: 7%;
 }
-section article div{
+.section1 article div{
     display: flex;
     flex-flow: column nowrap;
     justify-content: center !important;
@@ -289,7 +300,16 @@ section article div{
 }
 
 
-.section1 article div h2{
+.section1 article div h3{
+    margin-top: 10%;
+    margin-bottom: 3%;
+    font-size: 1.5rem;
+    text-align: center;
+    color: white;
+    
+}
+
+.section1 article div h4{
     margin-top: 10%;
     margin-bottom: 3%;
     font-size: 1.5rem;
@@ -315,54 +335,84 @@ section article div{
     width: 100%;
 }
 
-article div{
+.section1 article div{
     display: flex;
     justify-content: center;
     align-content: center;
 }
 
 
-/* SECTION2*/
+/* SECTION2- index*/
 
 .section2{
     grid-area: section2;
-    min-height: 300px;
-    min-width: fit-content;
-    background-color: rgb(255, 253, 253);
-    color: rgb(167, 167, 167);
+    min-height: 400px;
+    background-color: #041C32;
+    color: white;
+    font-family: 'Kanit', sans-serif;
+    text-shadow: 0 2px 3px rgb(0 0 0 / 60%);
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-evenly;
+    
 }
-.section2 h1{
-    font-size: 1.7rem;
+
+
+.section2 article h4:first-child{
+    font-size: 2rem;
     text-transform: uppercase;
     text-align: center;
-    margin: 10px;
+    margin: 0px;
+    font-family: 'Kanit', sans-serif;
 }
 
-.section2 h2{
+.section2 article  h4:last-child{
     text-align: center;
+    margin: 5% 35%;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 600;
+    text-align: center;
+    font-size: 1.5rem;
+    background-color: #FF8E00;
+    padding: 2% 3%;
+    border: 1px solid none;
+    border-radius: 50px;
+
+    
+}
+.section2 article h4:last-child:hover{
+    transform: scale(1.1);
+    background-color: #fea941;
 }
 
+/* grids de idiomas*/
 
+.containerIdiomas{
+    position: relative;
+    height: 100vh !important;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.4fr 1.6fr 1.2fr 1.2fr 1.2fr 0.4;
+    grid-template-areas:"header"
+                        "fondo"
+                        "sectioni2"
+                        "mainId"
+                        "sectioni3"
+                        "footer";
+}
 
 /* LINK A INGLES*/
 
-/*sectionIdiomas1*/
-
-.sectionIdiomas1{
-    background-image: linear-gradient(to bottom, rgb(172, 182, 195), rgb(201, 218, 217), rgb(255, 255, 255));
-    
-    
+/* fondo-titulo*/
+.fondo-titulo{
+    grid-area: fondo;
 }
-
 .divIn{
-    background-image: url(../img/bigben.png) !important;
-    background-size: 100% 100%;
+    background-image: url(../img/bigbmobile.png);
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: fixed;
-    height: 400px;
+    height: 700px;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
@@ -372,60 +422,98 @@ article div{
 .divIn h1{
     text-align: center;
     font-size: 3rem;
-    color: black;
+    color: white;
+    text-shadow: 0 2px 3px rgb(0 0 0 / 60%);
     padding-left: 7%;
     padding-right: 7%;
-    padding-bottom: 5%;
-    
-    
+    padding-bottom: 3%;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 600;
 }
 
-.divIn h2{
+.empezaYa{
+    font-family: 'Kanit', sans-serif;
+    font-weight: 600;
     text-align: center;
     font-size: 1.5rem;
-    color: black;
-    padding-left: 7%;
-    padding-right: 7%;
+    background-color: #FF8E00;
+    padding: 1% 2%;
+    border: 1px solid none;
+    border-radius: 50px;
     
 }
 
-.sectionIdiomas1 article{
-    border-top: 2px solid rgb(31, 23, 8);
+.empezaYa a{
+    text-decoration: none;
+    color: white;
+    text-shadow: 0 2px 3px rgb(0 0 0 / 60%);
+}
+
+.empezaYa:hover{
+    transform: scale(1.1);
+    background-color: #fea941;
+}
+
+/*main- sectionIdiomas*/
+
+.sectionIdiomas{
+    grid-area: mainId;
+    background: rgb(4,28,50);
+    background: linear-gradient(to bottom, rgba(4,28,50,1) 0%, rgba(10,67,120,1) 12%, rgba(16,109,194,1) 100%);
+    padding-bottom: 45%;
+    height: auto;
+}
+
+
+
+.sectionIdiomas article{
+    border-top: 2px solid #FF8E00;
     
     padding: 3% 10%;
     margin: 3% 10%;
 }
 
-.sectionIdiomas1 article h2{
+.sectionIdiomas article h3{
     text-align: center;
-    color: rgb(94, 83, 64);
+    color: #FF8E00;
+    font-family: 'Kanit', sans-serif;
     padding-bottom: 6%;
 }
 
-.sectionIdiomas1 article p{
+.sectionIdiomas article p{
     font-size: 1rem;
+    color: white;
+    font-family: 'Kanit', sans-serif;
 }
 
 /*sectionIdiomas2*/
 
 .sectionIdiomas2{
-    
-    background-color: white;
+    grid-area: sectioni2;
+    background-color: #041C32;
     padding: 10% 10%;
-    color: rgb(248, 244, 244);
+    color: black;
+    font-family: 'Kanit', sans-serif;
+    
+    
 }
 
 .sectionIdiomas2 article{
-    background-color: rgb(152, 149, 149);
+    background-color: white;
     padding: 10%;
     border: 2px solid none;
-    border-radius: 50px;
+    border-radius: 1px;
+    -webkit-box-shadow: 0px 2px 8px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 2px 8px -1px rgba(0,0,0,0.75);
+    box-shadow: 0px 2px 8px -1px rgba(0,0,0,0.75);
 }
 
-.sectionIdiomas2 article h1{
+.sectionIdiomas2 article h4{
     font-size: 2rem;
     text-align: center;
     padding-bottom: 8%;
+    color: #ffa304;
+    text-shadow: 0 2px 3px rgb(0 0 0 / 60%);
 }
 
 .sectionIdiomas2 article p{
@@ -435,31 +523,57 @@ article div{
 
 
 
-/*sectionIdiomas3*/
+/*sectionIdiomas3 (al final de pagina) */
 
 .sectionIdiomas3{
-    background-color: rgb(87, 87, 87);
-    padding: 3% 3%;
-    color: white;
+    grid-area: sectioni3;
+    background-image: url(../img/madera.png);
+    padding: 5% 12%;
+    color: black;
+    font-family: 'Kanit', sans-serif;
+    position: relative;
+    height: 350px;
+    
 }
 
-.sectionIdiomas3 h1{
+.sectionIdiomas3 div{
+    border: 1px solid none;
+    -webkit-box-shadow: 0px 2px 8px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 2px 8px -1px rgba(0,0,0,0.75);
+    box-shadow: 0px 2px 8px -1px rgba(0,0,0,0.75);
+    background-color: white;
+    padding: 5% 3%;
+    position: absolute;
+    bottom: 120px;
+    left: 70px;
+    right: 70px;
+    
+
+}
+.sectionIdiomas3 h4{
     text-align: center;
     padding: 3%;
+    font-family: 'Kanit', sans-serif;
+    color: #0d5292;
+    text-shadow: 0 2px 3px rgb(0 0 0 / 60%);
 }
 
 .sectionIdiomas3 p{
     padding: 3%;
+    font-family: 'Kanit', sans-serif;
+    
 }
 
 
 /*LINK A ALEMAN cambios*/
+
+
 .divAl{
     background-image: url(../img/alemania.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: fixed;
-    height: 400px;
+    height: 700px;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
@@ -469,30 +583,41 @@ article div{
 .divAl h1{
     text-align: center;
     font-size: 3rem;
-    color: black;
+    color: white;
+    text-shadow: 0 2px 3px rgb(0 0 0 / 60%);
     padding-left: 7%;
     padding-right: 7%;
-    padding-bottom: 5%;
+    padding-bottom: 3%;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 600;
     
     
 }
 
 .divAl h2{
+    font-family: 'Kanit', sans-serif;
+    font-weight: 600;
     text-align: center;
     font-size: 1.5rem;
-    color: black;
-    padding-left: 7%;
-    padding-right: 7%;
+    background-color: #FF8E00;
+    color: white;
+    text-shadow: 0 2px 3px rgb(0 0 0 / 60%);
+    padding: 1% 2%;
+    border: 1px solid none;
+    border-radius: 50px;
     
 }
 
+
+
 /* LINK FRANCES cambios*/
+
 .divFr{
-    background-image: url(../img/francia.png);
-    background-size: 100% 100%;
+    background-image: url(../img/francemobile.png);
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: fixed;
-    height: 400px;
+    height: 700px;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
@@ -502,30 +627,39 @@ article div{
 .divFr h1{
     text-align: center;
     font-size: 3rem;
-    color: black;
+    color: white;
+    text-shadow: 0 2px 3px rgb(0 0 0 / 60%);
     padding-left: 7%;
     padding-right: 7%;
-    padding-bottom: 5%;
+    padding-bottom: 3%;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 600;
     
     
 }
 
 .divFr h2{
+    font-family: 'Kanit', sans-serif;
+    font-weight: 600;
     text-align: center;
     font-size: 1.5rem;
-    color: black;
-    padding-left: 7%;
-    padding-right: 7%;
+    background-color: #FF8E00;
+    color: white;
+    text-shadow: 0 2px 3px rgb(0 0 0 / 60%);
+    padding: 1% 2%;
+    border: 1px solid none;
+    border-radius: 50px;
     
 }
 
 /* LINK ITALIANO cambios*/
+
 .divIt{
-    background-image: url(../img/italia.png);
-    background-size: 100% 100%;
+    background-image: url(../img/italia.jpg);
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: fixed;
-    height: 400px;
+    height: 700px;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
@@ -535,30 +669,39 @@ article div{
 .divIt h1{
     text-align: center;
     font-size: 3rem;
-    color: black;
+    color: white;
+    text-shadow: 0 2px 3px rgb(0 0 0 / 60%);
     padding-left: 7%;
     padding-right: 7%;
-    padding-bottom: 5%;
+    padding-bottom: 3%;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 600;
     
     
 }
 
 .divIt h2{
+    font-family: 'Kanit', sans-serif;
+    font-weight: 600;
     text-align: center;
     font-size: 1.5rem;
-    color: black;
-    padding-left: 7%;
-    padding-right: 7%;
+    background-color: #FF8E00;
+    color: white;
+    text-shadow: 0 2px 3px rgb(0 0 0 / 60%);
+    padding: 1% 2%;
+    border: 1px solid none;
+    border-radius: 50px;
     
 }
 
 /* LINK RUSO cambios*/
+
 .divRu{
-    background-image: url(../img/rusia.png);
-    background-size: 100% 100%;
+    background-image: url(../img/russiamobile.png);
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: fixed;
-    height: 600px;
+    height: 700px;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
@@ -568,30 +711,39 @@ article div{
 .divRu h1{
     text-align: center;
     font-size: 3rem;
-    color:black;
+    color: white;
+    text-shadow: 0 2px 3px rgb(0 0 0 / 60%);
     padding-left: 7%;
     padding-right: 7%;
-    padding-bottom: 5%;
+    padding-bottom: 3%;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 600;
     
     
 }
 
 .divRu h2{
+    font-family: 'Kanit', sans-serif;
+    font-weight: 600;
     text-align: center;
     font-size: 1.5rem;
-    color: black;
-    padding-left: 7%;
-    padding-right: 7%;
+    background-color: #FF8E00;
+    color: white;
+    text-shadow: 0 2px 3px rgb(0 0 0 / 60%);
+    padding: 1% 2%;
+    border: 1px solid none;
+    border-radius: 50px;
     
 }
 
 /* LINK HOLANDES cambios*/
+
 .divHo{
-    background-image: url(../img/holanda.png);
+    background-image: url(../img/holandaa.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: fixed;
-    height: 400px;
+    height: 700px;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
@@ -601,20 +753,28 @@ article div{
 .divHo h1{
     text-align: center;
     font-size: 3rem;
-    color: black;
+    color: white;
+    text-shadow: 0 2px 3px rgb(0 0 0 / 60%);
     padding-left: 7%;
     padding-right: 7%;
-    padding-bottom: 5%;
+    padding-bottom: 3%;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 600;
     
     
 }
 
 .divHo h2{
+    font-family: 'Kanit', sans-serif;
+    font-weight: 600;
     text-align: center;
     font-size: 1.5rem;
-    color: black;
-    padding-left: 7%;
-    padding-right: 7%;
+    background-color: #FF8E00;
+    color: white;
+    text-shadow: 0 2px 3px rgb(0 0 0 / 60%);
+    padding: 1% 2%;
+    border: 1px solid none;
+    border-radius: 50px;
     
 }
 
@@ -662,7 +822,7 @@ footer{
 
 .fa-tiktok {
     background: white;
-    color: rgb(15, 14, 14);
+    color: black;
 }
 
 .fa-snapchat {
@@ -674,18 +834,27 @@ footer{
 
 /* -----------MEDIA QUERIES------------*/
 
-@media only screen and (min-width: 600px){
+@media only screen and (min-width: 500px){
     
     /* INDEX - section2 */
     
     .section2{
-        background-color: rgb(255, 254, 254) !important;
+        
         min-width: 100% !important;
         
     }
     .section2 h1{
         font-size: 3rem;
         padding-bottom: 2%;
+        
+    }
+
+    /*main- sectionIdiomas*/
+
+    .sectionIdiomas{
+        padding-bottom: 15%;
+        height: auto;
+        
         
     }
 
@@ -696,7 +865,7 @@ footer{
     
 }
 
-@media only screen and (min-width: 900px){
+@media only screen and (min-width: 950px){
     .container{
         position: relative;
     }
@@ -718,14 +887,14 @@ footer{
     
     .menu{ 
         display: flex;
-        grid-area: menu;  
-        margin-top: 15px;
+        grid-area: menu; 
         padding: 2px;
-        background-color:rgb(7, 7, 7);
+        background-color:black;
         text-align: center;
         list-style: none;
         display: flex;
         flex-flow: row nowrap;
+        align-self: center;
         min-width: fit-content ;
         
     }
@@ -744,11 +913,12 @@ footer{
         max-width: 100% ; 
         min-width: fit-content;
         
+        
     }
 
     .menu li{
         display: flex;
-        background-color:rgb(8, 8, 8);
+        background-color:black;
         display: inline-block;
         padding: 10px;
         margin: 5px;
@@ -760,9 +930,14 @@ footer{
         color: rgb(250, 250, 250);
         text-decoration: none;
         text-transform: uppercase;
-        font-size: 20px;
+        font-size: 1rem;
         font-family: Arial, Helvetica, sans-serif;
         
+    }
+
+    .logo{
+        width: 40%;
+        padding-left: 15px;
     }
 
     /* INDEX - section principio*/
@@ -776,16 +951,24 @@ footer{
     .principio h1{
         font-size: 4rem ;
         text-align: center;
-        
+        margin-top: 10%;
+        padding-bottom: 0%;
 
         
     }
-    .principio h2{
+    .principio h2:first-of-type{
         font-size: 2rem ;
-        
         margin: 0% ;
         padding: 3% ;
+        text-shadow: 0 2px 3px rgb(0 0 0 / 60%);
     }
+
+    .principio h2:last-of-type{
+        font-size: 1.6rem;
+        text-shadow: 0 2px 3px rgb(0 0 0 / 60%);
+    }
+
+
 
     .principio div div{
         padding-bottom: 15% ;
@@ -796,7 +979,7 @@ footer{
         
     }
     .imagenes div a{
-        font-size: 1.3rem;
+        font-size: 1rem;
         
     }
 
@@ -837,20 +1020,23 @@ footer{
         color: black ;
         background-color: rgb(0, 0, 0) ;
         background-size: cover;
-        min-height: 1800px ;
+        min-height: 1700px ;
         min-width: auto;
         padding-left: 2% ;
         padding-right: 2% ;
         padding-bottom: 3% ;
         display: flex;
         flex-flow: column nowrap;
+        justify-content: space-evenly;
     }
 
-    .section1 h1{
+    .section1 h3{
         color: white ;
-        font-size: 3rem ;
-        margin-bottom: 3%;
+        font-size: 2.3rem ;
+        text-shadow: 0 2px 3px rgb(0 0 0 / 60%);
+        font-family: 'Kanit', sans-serif;
         margin-top: 0% ;
+        
     }
 
     .section1 article{
@@ -861,6 +1047,8 @@ footer{
         flex-flow: row-reverse nowrap;
         justify-content: center ;
         align-items: center ;
+        padding-left: 2%;
+        padding-right: 2%;
         
     }
 
@@ -881,59 +1069,166 @@ footer{
         flex-flow: column nowrap;
         justify-content: center ;
         align-items: center ;
+        
 
 
     }
 
     .div1{
-        padding-left: 20% !important;
+        padding-left: 10% !important;
     }
 
     .divMedio{
-        padding-right: 17% ;
+        padding-right: 10% ;
     }
 
     
-    .section1 article div h2{
-        font-size: 2.3rem ;
+    .section1 article div h3{
+        font-size: 2.2rem ;
         text-align: left;
-        color: black ;
+        color: #ffa304;
+        text-shadow: 0 2px 3px rgb(0 0 0 / 60%);
+        font-family: 'Kanit', sans-serif;
+        
+    }
+    .section1 article div h4{
+        font-size: 2.2rem ;
+        text-align: left;
+        color: #ffa304;
+        text-shadow: 0 2px 3px rgb(0 0 0 / 60%);
+        font-family: 'Kanit', sans-serif;
         
     }
 
     .section1 article div p{
-        font-size: 1.6rem ;
+        font-size: 1.3rem ;
         color: black ;
     }
 
     .talking{
-        width: 140% ;
+        width: 30% ;
 
     }
     .ritmo{
-        width: 140% ;
+        width: 30% ;
     }
     .ayuda{
-        width: 140% ;
+        width: 30% ;
     }
 
+    .divFr{
+        background-image: url(../img/francia.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: fixed;
+    }
+    .divIn{
+        background-image: url(../img/bigben.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: fixed;
+    }
+    .divRu{
+        background-image: url(../img/russiaa.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: fixed;
+    }
     /* INDEX - section2 */
 
-    .section2{
-        background-color: rgb(255, 255, 255) ;
-        min-width: 100% ;
+    .section2 article h4:first-of-type{
+        padding-top: 5%;
+        font-size: 2.5rem;
+    }
+    .section2 article  h4:last-child{
+        text-align: center;
+        margin: 5% 42%;
+        font-family: 'Kanit', sans-serif;
+        font-weight: 600;
+        text-align: center;
+        font-size: 1.5rem;
+        background-color: #FF8E00;
+        padding: 1%;
+        border: 1px solid none;
+        border-radius: 50px;
+    
         
     }
-    .section2 h1{
-        font-size: 3rem ;
-        color: rgb(147, 147, 147) ;
-        padding-bottom: 2%;
+    .section2 article h4:last-child:hover{
+        transform: scale(1.1);
+        background-color: #fea941;
+    }
+
+    /*INGLÉS*/
+
+    /* fondo*/
+    
+    
+    .divIn h1{
+        font-size: 4rem;
+    }
+
+    /*main- sectionIdiomas*/
+
+    .sectionIdiomas article{
+        margin: 3% 20%;
+        font-size: 1.2rem;
+    }
+
+    .sectionIdiomas article h3{
+        font-size: 2rem;
+        
+    }
+    
+    .sectionIdiomas article p{
+        font-size: 1.2rem;
+        
         
     }
 
-    .section2 h2{
-        font-size: 1.9rem ;
-        color: rgb(147, 147, 147) ;
+    /*sectionIdiomas2 (primer cuadro)*/
+
+    .sectionIdiomas2 article{
+        padding: 5%;
+        
+    }
+
+    .sectionIdiomas2 article h4{
+        font-size: 2.5rem;
+        color: #ffa304;
+        text-shadow: 0 2px 3px rgb(0 0 0 / 60%);
+    }
+
+    .sectionIdiomas2 article p{
+        font-size: 1.5rem;
+    }
+
+    /*sectionIdiomas3 (al final de pagina) */
+
+     
+
+    .sectionIdiomas3 div{
+        left: 110px;
+        right: 110px;
+        
+
+    }
+    .sectionIdiomas3 h4{
+        padding-bottom: 0%;
+        font-size: 3rem;
+        color: #0d5292;
+        text-shadow: 0 2px 3px rgb(0 0 0 / 60%);
+        font-family: 'Kanit', sans-serif;
+        font-weight: 800;
+        
+        
+    }
+
+    .sectionIdiomas3 p{
+        font-size: 1.5rem;
+        font-family: 'Kanit', sans-serif;
+        color: #120b0c;
+        font-weight: 600;
     }
 
     /*FOOTER */
