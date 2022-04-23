@@ -55,7 +55,8 @@
               padding: 4px;
               margin-left: 10px;
               font-family: Arial, Helvetica, sans-serif;
-              font-size: 1rem; }
+              font-size: 1rem;
+              text-decoration: none; }
   .header .stickyMenu {
     display: none; }
 
@@ -321,6 +322,317 @@ footer {
     .container .section2 article h4:last-child:hover {
       transform: scale(1.1);
       background-color: #fea941; }
+    .container .section2 article h4:last-child a {
+      text-decoration: none;
+      color: white;
+      text-shadow: 0 2px 3px rgba(0, 0, 0, 0.6); }
+
+.containerIdiomas .fondo-titulo {
+  grid-area: fondo; }
+  .containerIdiomas .fondo-titulo .divIn {
+    background-image: url(../img/bigbmobile.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: fixed;
+    height: 700px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center !important; }
+    .containerIdiomas .fondo-titulo .divIn h1 {
+      text-align: center;
+      font-size: 3rem;
+      color: white;
+      text-shadow: 0 2px 3px rgba(0, 0, 0, 0.6);
+      padding-left: 7%;
+      padding-right: 7%;
+      padding-bottom: 3%;
+      font-family: 'Kanit', sans-serif;
+      font-weight: 600; }
+    .containerIdiomas .fondo-titulo .divIn .empezaYa {
+      font-family: 'Kanit', sans-serif;
+      font-weight: 600;
+      text-align: center;
+      font-size: 1.5rem;
+      background-color: #FF8E00;
+      padding: 1% 2%;
+      border: 1px solid none;
+      border-radius: 50px; }
+      .containerIdiomas .fondo-titulo .divIn .empezaYa:hover {
+        transform: scale(1.1);
+        background-color: #fea941; }
+      .containerIdiomas .fondo-titulo .divIn .empezaYa a {
+        text-decoration: none;
+        color: white;
+        text-shadow: 0 2px 3px rgba(0, 0, 0, 0.6); }
+
+.containerIdiomas .sectionIdiomas {
+  grid-area: mainId;
+  background: #041c32;
+  background: linear-gradient(to bottom, #041c32 0%, #0a4378 12%, #106dc2 100%);
+  padding-bottom: 45%;
+  height: auto; }
+  .containerIdiomas .sectionIdiomas article {
+    border-top: 2px solid #FF8E00;
+    padding: 3% 10%;
+    margin: 3% 10%; }
+    .containerIdiomas .sectionIdiomas article h3 {
+      text-align: center;
+      color: #FF8E00;
+      font-family: 'Kanit', sans-serif;
+      padding-bottom: 6%; }
+    .containerIdiomas .sectionIdiomas article p {
+      font-size: 1rem;
+      color: white;
+      font-family: 'Kanit', sans-serif; }
+
+.containerIdiomas .sectionIdiomas2 {
+  grid-area: sectioni2;
+  background-color: #041C32;
+  padding: 10% 10%;
+  color: black;
+  font-family: 'Kanit', sans-serif; }
+  .containerIdiomas .sectionIdiomas2 article {
+    background-color: white;
+    padding: 10%;
+    border: 2px solid none;
+    border-radius: 1px;
+    -webkit-box-shadow: 0px 2px 8px -1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 2px 8px -1px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 2px 8px -1px rgba(0, 0, 0, 0.75); }
+    .containerIdiomas .sectionIdiomas2 article h4 {
+      font-size: 2rem;
+      text-align: center;
+      padding-bottom: 8%;
+      color: #ffa304;
+      text-shadow: 0 2px 3px rgba(0, 0, 0, 0.6); }
+    .containerIdiomas .sectionIdiomas2 article p {
+      font-size: 1rem;
+      padding-bottom: 4%; }
+
+.containerIdiomas .sectionIdiomas3 {
+  grid-area: sectioni3;
+  background-image: url(../img/madera.png);
+  padding: 5% 12%;
+  color: black;
+  font-family: 'Kanit', sans-serif;
+  position: relative;
+  height: 350px; }
+  .containerIdiomas .sectionIdiomas3 div {
+    border: 1px solid none;
+    -webkit-box-shadow: 0px 2px 8px -1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 2px 8px -1px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 2px 8px -1px rgba(0, 0, 0, 0.75);
+    background-color: white;
+    padding: 5% 3%;
+    position: absolute;
+    bottom: 120px;
+    left: 70px;
+    right: 70px; }
+    .containerIdiomas .sectionIdiomas3 div h4 {
+      text-align: center;
+      padding: 3%;
+      font-family: 'Kanit', sans-serif;
+      color: #0d5292;
+      text-shadow: 0 2px 3px rgba(0, 0, 0, 0.6); }
+    .containerIdiomas .sectionIdiomas3 div p {
+      padding: 3%;
+      font-family: 'Kanit', sans-serif; }
+
+.containerIdiomas .fondo-titulo {
+  grid-area: fondo; }
+  .containerIdiomas .fondo-titulo .divAl {
+    background-image: url(../img/alemania.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: fixed;
+    height: 700px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center !important; }
+    .containerIdiomas .fondo-titulo .divAl h1 {
+      text-align: center;
+      font-size: 3rem;
+      color: white;
+      text-shadow: 0 2px 3px rgba(0, 0, 0, 0.6);
+      padding-left: 7%;
+      padding-right: 7%;
+      padding-bottom: 3%;
+      font-family: 'Kanit', sans-serif;
+      font-weight: 600; }
+    .containerIdiomas .fondo-titulo .divAl .empezaYa {
+      font-family: 'Kanit', sans-serif;
+      font-weight: 600;
+      text-align: center;
+      font-size: 1.5rem;
+      background-color: #FF8E00;
+      padding: 1% 2%;
+      border: 1px solid none;
+      border-radius: 50px; }
+      .containerIdiomas .fondo-titulo .divAl .empezaYa:hover {
+        transform: scale(1.1);
+        background-color: #fea941; }
+      .containerIdiomas .fondo-titulo .divAl .empezaYa a {
+        text-decoration: none;
+        color: white;
+        text-shadow: 0 2px 3px rgba(0, 0, 0, 0.6); }
+
+.containerIdiomas .fondo-titulo {
+  grid-area: fondo; }
+  .containerIdiomas .fondo-titulo .divFr {
+    background-image: url(../img/francemobile.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: fixed;
+    height: 700px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center !important; }
+    .containerIdiomas .fondo-titulo .divFr h1 {
+      text-align: center;
+      font-size: 3rem;
+      color: white;
+      text-shadow: 0 2px 3px rgba(0, 0, 0, 0.6);
+      padding-left: 7%;
+      padding-right: 7%;
+      padding-bottom: 3%;
+      font-family: 'Kanit', sans-serif;
+      font-weight: 600; }
+    .containerIdiomas .fondo-titulo .divFr .empezaYa {
+      font-family: 'Kanit', sans-serif;
+      font-weight: 600;
+      text-align: center;
+      font-size: 1.5rem;
+      background-color: #FF8E00;
+      padding: 1% 2%;
+      border: 1px solid none;
+      border-radius: 50px; }
+      .containerIdiomas .fondo-titulo .divFr .empezaYa:hover {
+        transform: scale(1.1);
+        background-color: #fea941; }
+      .containerIdiomas .fondo-titulo .divFr .empezaYa a {
+        text-decoration: none;
+        color: white;
+        text-shadow: 0 2px 3px rgba(0, 0, 0, 0.6); }
+
+.containerIdiomas .fondo-titulo {
+  grid-area: fondo; }
+  .containerIdiomas .fondo-titulo .divIt {
+    background-image: url(../img/italia.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: fixed;
+    height: 700px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center !important; }
+    .containerIdiomas .fondo-titulo .divIt h1 {
+      text-align: center;
+      font-size: 3rem;
+      color: white;
+      text-shadow: 0 2px 3px rgba(0, 0, 0, 0.6);
+      padding-left: 7%;
+      padding-right: 7%;
+      padding-bottom: 3%;
+      font-family: 'Kanit', sans-serif;
+      font-weight: 600; }
+    .containerIdiomas .fondo-titulo .divIt .empezaYa {
+      font-family: 'Kanit', sans-serif;
+      font-weight: 600;
+      text-align: center;
+      font-size: 1.5rem;
+      background-color: #FF8E00;
+      padding: 1% 2%;
+      border: 1px solid none;
+      border-radius: 50px; }
+      .containerIdiomas .fondo-titulo .divIt .empezaYa:hover {
+        transform: scale(1.1);
+        background-color: #fea941; }
+      .containerIdiomas .fondo-titulo .divIt .empezaYa a {
+        text-decoration: none;
+        color: white;
+        text-shadow: 0 2px 3px rgba(0, 0, 0, 0.6); }
+
+.containerIdiomas .fondo-titulo {
+  grid-area: fondo; }
+  .containerIdiomas .fondo-titulo .divRu {
+    background-image: url(../img/russiamobile.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: fixed;
+    height: 700px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center !important; }
+    .containerIdiomas .fondo-titulo .divRu h1 {
+      text-align: center;
+      font-size: 3rem;
+      color: white;
+      text-shadow: 0 2px 3px rgba(0, 0, 0, 0.6);
+      padding-left: 7%;
+      padding-right: 7%;
+      padding-bottom: 3%;
+      font-family: 'Kanit', sans-serif;
+      font-weight: 600; }
+    .containerIdiomas .fondo-titulo .divRu .empezaYa {
+      font-family: 'Kanit', sans-serif;
+      font-weight: 600;
+      text-align: center;
+      font-size: 1.5rem;
+      background-color: #FF8E00;
+      padding: 1% 2%;
+      border: 1px solid none;
+      border-radius: 50px; }
+      .containerIdiomas .fondo-titulo .divRu .empezaYa:hover {
+        transform: scale(1.1);
+        background-color: #fea941; }
+      .containerIdiomas .fondo-titulo .divRu .empezaYa a {
+        text-decoration: none;
+        color: white;
+        text-shadow: 0 2px 3px rgba(0, 0, 0, 0.6); }
+
+.containerIdiomas .fondo-titulo {
+  grid-area: fondo; }
+  .containerIdiomas .fondo-titulo .divHo {
+    background-image: url(../img/holandaa.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: fixed;
+    height: 700px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center !important; }
+    .containerIdiomas .fondo-titulo .divHo h1 {
+      text-align: center;
+      font-size: 3rem;
+      color: white;
+      text-shadow: 0 2px 3px rgba(0, 0, 0, 0.6);
+      padding-left: 7%;
+      padding-right: 7%;
+      padding-bottom: 3%;
+      font-family: 'Kanit', sans-serif;
+      font-weight: 600; }
+    .containerIdiomas .fondo-titulo .divHo .empezaYa {
+      font-family: 'Kanit', sans-serif;
+      font-weight: 600;
+      text-align: center;
+      font-size: 1.5rem;
+      background-color: #FF8E00;
+      padding: 1% 2%;
+      border: 1px solid none;
+      border-radius: 50px; }
+      .containerIdiomas .fondo-titulo .divHo .empezaYa:hover {
+        transform: scale(1.1);
+        background-color: #fea941; }
+      .containerIdiomas .fondo-titulo .divHo .empezaYa a {
+        text-decoration: none;
+        color: white;
+        text-shadow: 0 2px 3px rgba(0, 0, 0, 0.6); }
 
 .container {
   height: 100vh;
@@ -542,4 +854,102 @@ footer {
       .container .section2 article h4:last-of-type a {
         text-decoration: none;
         color: white;
-        text-shadow: 0 2px 3px rgba(0, 0, 0, 0.6); } }
+        text-shadow: 0 2px 3px rgba(0, 0, 0, 0.6); }
+  .containerIdiomas .header {
+    position: sticky;
+    top: 0; }
+    .containerIdiomas .header div .logo {
+      width: 40%;
+      padding-left: 15px; }
+    .containerIdiomas .header nav ul li .imgMenu {
+      display: none; }
+    .containerIdiomas .header .stickyMenu {
+      display: flex !important;
+      position: sticky;
+      top: 0;
+      max-width: 100%;
+      min-width: fit-content; }
+      .containerIdiomas .header .stickyMenu .menu {
+        display: flex;
+        grid-area: menu;
+        padding: 2px;
+        background-color: black;
+        text-align: center;
+        list-style: none;
+        display: flex;
+        flex-flow: row nowrap;
+        align-self: center;
+        min-width: fit-content; }
+        .containerIdiomas .header .stickyMenu .menu li {
+          display: flex;
+          background-color: black;
+          display: inline-block;
+          padding: 10px;
+          margin: 5px; }
+          .containerIdiomas .header .stickyMenu .menu li:hover {
+            transform: scale(1.2); }
+            .containerIdiomas .header .stickyMenu .menu li:hover ul {
+              display: none; }
+          .containerIdiomas .header .stickyMenu .menu li a {
+            display: flex;
+            color: #fafafa;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 1rem;
+            font-family: Arial, Helvetica, sans-serif; }
+  .containerIdiomas .fondo-titulo .divFr {
+    background-image: url(../img/francia.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: fixed; }
+  .containerIdiomas .fondo-titulo .divIn {
+    background-image: url(../img/bigben.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: fixed; }
+  .containerIdiomas .fondo-titulo .divRu {
+    background-image: url(../img/russiaa.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: fixed; }
+  .containerIdiomas .sectionIdiomas article {
+    margin: 3% 20%;
+    font-size: 1.2rem; }
+    .containerIdiomas .sectionIdiomas article h3 {
+      font-size: 2rem; }
+    .containerIdiomas .sectionIdiomas article p {
+      font-size: 1.2rem; }
+  .containerIdiomas .sectionIdiomas2 article {
+    padding: 5%; }
+    .containerIdiomas .sectionIdiomas2 article h4 {
+      font-size: 2.5rem; }
+    .containerIdiomas .sectionIdiomas2 article p {
+      font-size: 1.5rem; }
+  .containerIdiomas .sectionIdiomas3 div {
+    left: 110px;
+    right: 110px; }
+    .containerIdiomas .sectionIdiomas3 div h4 {
+      padding-bottom: 0%;
+      font-size: 3rem;
+      color: #0d5292;
+      font-family: 'Kanit', sans-serif;
+      font-weight: 800; }
+    .containerIdiomas .sectionIdiomas3 div p {
+      font-size: 1.5rem;
+      font-family: 'Kanit', sans-serif;
+      color: #120b0c;
+      font-weight: 600; }
+  footer {
+    grid-area: footer;
+    width: 100%;
+    height: 80px;
+    background-color: black;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 50px; }
+    footer a .fa-brands {
+      padding: 10px;
+      font-size: 20px;
+      width: 40px; } }

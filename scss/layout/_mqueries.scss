@@ -313,4 +313,158 @@
             }
         }
     }
+
+    //media queries de todos los idiomas
+
+    .containerIdiomas{
+        .header{
+            position: sticky;
+            top: 0;
+            div{
+                .logo{
+                    width: 40%;
+                    padding-left: 15px;
+                }
+            }
+        
+            nav{
+                
+                ul{
+                    
+                    li{
+                        .imgMenu{
+                            display: none;
+                        }
+                    }
+                }
+            }
+
+            .stickyMenu{
+                display: flex !important ;
+                position: sticky;
+                top: 0;
+                max-width: 100% ; 
+                min-width: fit-content;
+                .menu{
+                    display: flex;
+                    grid-area: menu; 
+                    padding: 2px;
+                    background-color:black;
+                    text-align: center;
+                    list-style: none;
+                    display: flex;
+                    flex-flow: row nowrap;
+                    align-self: center;
+                    min-width: fit-content ;
+                    li{
+                        display: flex;
+                        background-color:black;
+                        display: inline-block;
+                        padding: 10px;
+                        margin: 5px;
+                        &:hover{
+                            transform: scale(1.2);
+                            ul{
+                                display: none;
+                            }
+                        }
+                        a{
+                            display: flex;
+                            color: rgb(250, 250, 250);
+                            text-decoration: none;
+                            text-transform: uppercase;
+                            font-size: 1rem;
+                            font-family: Arial, Helvetica, sans-serif;
+                        }
+                    }
+                }
+            }
+        } 
+        .fondo-titulo{
+            .divFr{
+                background-image: url(../img/francia.png);
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: fixed;
+            }
+            .divIn{
+                background-image: url(../img/bigben.png);
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: fixed;
+            }
+            .divRu{
+                background-image: url(../img/russiaa.png);
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: fixed;
+            }
+        }
+        //main- sectionIdiomas
+        .sectionIdiomas{
+            article{
+                margin: 3% 20%;
+                font-size: 1.2rem;
+                h3{
+                    font-size: 2rem;
+                }
+                p{
+                    font-size: 1.2rem;
+                }
+            }
+        }
+
+        //otras section
+        .sectionIdiomas2{
+            article{
+                padding: 5%;
+                h4{
+                    font-size: 2.5rem;
+                }
+                p{
+                    font-size: 1.5rem;
+                }
+            }
+        }
+
+        .sectionIdiomas3{
+            div{
+                left: 110px;
+                right: 110px;
+                h4{
+                    padding-bottom: 0%;
+                    font-size: 3rem;
+                    color: #0d5292;
+                    font-family: 'Kanit', sans-serif;
+                    font-weight: 800;
+                }
+                p{
+                    font-size: 1.5rem;
+                    font-family: 'Kanit', sans-serif;
+                    color: #120b0c;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+
+    //footer
+    footer{
+        grid-area: footer;
+        width: 100%;
+        height: 80px;
+        background-color: black ;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center ;
+        align-items: center ;
+        gap: 50px ;
+        a{
+            .fa-brands{
+                padding: 10px;
+                font-size: 20px;
+                width: 40px;
+            }
+        }
+    }
 }

@@ -1,0 +1,46 @@
+.containerIdiomas{
+    .fondo-titulo{
+        grid-area: fondo;
+        .divIt{
+            background-image: url(../img/italia.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: fixed;
+            height: 700px;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-items: center !important;
+            h1{
+                text-align: center;
+                font-size: 3rem;
+                color: white;
+                text-shadow: 0 2px 3px rgba(0, 0, 0, 0.60);
+                padding-left: 7%;
+                padding-right: 7%;
+                padding-bottom: 3%;
+                font-family: 'Kanit', sans-serif;
+                font-weight: 600;
+            }
+            .empezaYa{
+                font-family: 'Kanit', sans-serif;
+                font-weight: 600;
+                text-align: center;
+                font-size: 1.5rem;
+                background-color: #FF8E00;
+                padding: 1% 2%;
+                border: 1px solid none;
+                border-radius: 50px;
+                &:hover{
+                    transform: scale(1.1);
+                    background-color: #fea941;
+                }
+                a{
+                    text-decoration: none;
+                    color: white;
+                    text-shadow: 0 2px 3px rgba(0, 0, 0, 0.60);
+                }
+            }
+        }
+    }
+}
