@@ -30,6 +30,25 @@
 }
 
 @media only screen and (min-width: 500px){
+    .container{
+        header{
+            div{
+                .logo{
+                    width: 40%;
+                }
+            }
+        }
+    }
+    .containerIdiomas{
+        header{
+            div{
+                .logo{
+                    width: 40%;
+                }
+            }
+        }
+    }
+
     //index
     .section2{
         min-width: 100% !important;
@@ -42,7 +61,8 @@
     .sectionIdiomas{
         padding-bottom: 15%;
         height: auto;
-    }
+    }    
+    
 }
 
 @media only screen and (min-width: 950px){
