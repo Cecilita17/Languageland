@@ -11,7 +11,7 @@
   align-items: center;
   list-style: none; }
   .header div .logo {
-    width: 50%;
+    width: 55%;
     padding-left: 15px; }
   .header nav {
     justify-self: flex-end; }
@@ -651,9 +651,9 @@ footer {
 
 @media only screen and (min-width: 500px) {
   .container header div .logo {
-    width: 40%; }
+    width: 45%; }
   .containerIdiomas header div .logo {
-    width: 40%; }
+    width: 45%; }
   .section2 {
     min-width: 100% !important; }
     .section2 h1 {
