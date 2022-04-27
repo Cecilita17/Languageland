@@ -1,0 +1,105 @@
+/* iniciar sesion, registrarse, contacto (bootstrap)*/
+
+.containerIs{
+    
+    .header{
+        grid-area: header;
+        background-color: black;
+        min-width: auto;
+        position: sticky;
+        top: 0;
+        z-index: 3;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+        list-style: none;
+    
+        //menu hamburguesa
+        div{
+            .logo{
+                width: 55%;
+                padding-left: 15px;
+            }
+        }
+    
+        nav{
+            justify-self: flex-end;
+            ul{
+                list-style: none;
+                font-size: 0;
+                min-width: fit-content !important;
+                li{
+                    &:hover{
+                        ul{
+                            display: block;
+                        }
+                    }
+                    display: inline-block;
+                    width: 25% ;
+                    position: relative;
+                    font-size: 14px;
+                    min-width: fit-content !important;
+                    .imgMenu{
+                        list-style: none;
+                        text-decoration: none;
+                        color: black;
+                        width: 25%;
+                        position: relative;
+                        z-index: 2;
+                        align-self: flex-end;
+                        justify-self: flex-end;
+                    }
+                    ul{
+                        position: absolute;
+                        display: none;
+                        li{
+                            display: block;
+                            width: auto;
+                            padding: 5px;
+                            border-top: 1px solid white;
+                            border-left: 1px solid white;
+                            border-right: 1px solid white;
+                            text-align: left;
+                            background-color:black;
+                            a{
+                                color: white;
+                                background-color: black;
+                                width:100vh;
+                                padding:4px;
+                                margin-left: 10px;
+                                font-family: Arial, Helvetica, sans-serif;
+                                font-size: 1rem;
+                                text-decoration: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .stickyMenu{
+            display: none;
+        }
+    }
+    .mainIs{
+        grid-area: mainIs;
+        background-image: url(../../img/isesion.png);
+        .text-cambios{
+            color: white;
+            font-family: 'Kanit', sans-serif;
+            text-shadow: 0 2px 3px rgba(0, 0, 0, 0.6);
+        }
+        .boton{
+            background-color: #f78ef7;
+        }
+        .links{
+            color: rgb(147, 147, 255);
+        }
+        .color-caja{
+            opacity: 0.3;
+        }
+    }
+
+    
+}
+    

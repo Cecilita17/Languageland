@@ -634,6 +634,162 @@ footer {
         color: white;
         text-shadow: 0 2px 3px rgba(0, 0, 0, 0.6); }
 
+body {
+  background-color: #2F3242; }
+
+svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -250px;
+  margin-left: -400px; }
+
+.message-box {
+  height: 200px;
+  width: 380px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -100px;
+  margin-left: 50px;
+  color: #FFF;
+  font-family: Roboto;
+  font-weight: 300; }
+
+.message-box h1 {
+  font-size: 60px;
+  line-height: 46px;
+  margin-bottom: 40px; }
+
+.buttons-con .action-link-wrap {
+  margin-top: 40px; }
+
+.buttons-con .action-link-wrap a {
+  background: #68c950;
+  padding: 8px 25px;
+  border-radius: 4px;
+  color: #FFF;
+  font-weight: bold;
+  font-size: 14px;
+  transition: all 0.3s linear;
+  cursor: pointer;
+  text-decoration: none;
+  margin-right: 10px; }
+
+.buttons-con .action-link-wrap a:hover {
+  background: #5A5C6C;
+  color: #fff; }
+
+#Polygon-1, #Polygon-2, #Polygon-3, #Polygon-4, #Polygon-4, #Polygon-5 {
+  animation: float 1s infinite ease-in-out alternate; }
+
+#Polygon-2 {
+  animation-delay: .2s; }
+
+#Polygon-3 {
+  animation-delay: .4s; }
+
+#Polygon-4 {
+  animation-delay: .6s; }
+
+#Polygon-5 {
+  animation-delay: .8s; }
+
+@keyframes float {
+  100% {
+    transform: translateY(20px); } }
+
+@media (max-width: 450px) {
+  svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -250px;
+    margin-left: -190px; }
+  .message-box {
+    top: 50%;
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -190px;
+    text-align: center; } }
+
+/* iniciar sesion, registrarse, contacto (bootstrap)*/
+.containerIs .header {
+  grid-area: header;
+  background-color: black;
+  min-width: auto;
+  position: sticky;
+  top: 0;
+  z-index: 3;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none; }
+  .containerIs .header div .logo {
+    width: 55%;
+    padding-left: 15px; }
+  .containerIs .header nav {
+    justify-self: flex-end; }
+    .containerIs .header nav ul {
+      list-style: none;
+      font-size: 0;
+      min-width: fit-content !important; }
+      .containerIs .header nav ul li {
+        display: inline-block;
+        width: 25%;
+        position: relative;
+        font-size: 14px;
+        min-width: fit-content !important; }
+        .containerIs .header nav ul li:hover ul {
+          display: block; }
+        .containerIs .header nav ul li .imgMenu {
+          list-style: none;
+          text-decoration: none;
+          color: black;
+          width: 25%;
+          position: relative;
+          z-index: 2;
+          align-self: flex-end;
+          justify-self: flex-end; }
+        .containerIs .header nav ul li ul {
+          position: absolute;
+          display: none; }
+          .containerIs .header nav ul li ul li {
+            display: block;
+            width: auto;
+            padding: 5px;
+            border-top: 1px solid white;
+            border-left: 1px solid white;
+            border-right: 1px solid white;
+            text-align: left;
+            background-color: black; }
+            .containerIs .header nav ul li ul li a {
+              color: white;
+              background-color: black;
+              width: 100vh;
+              padding: 4px;
+              margin-left: 10px;
+              font-family: Arial, Helvetica, sans-serif;
+              font-size: 1rem;
+              text-decoration: none; }
+  .containerIs .header .stickyMenu {
+    display: none; }
+
+.containerIs .mainIs {
+  grid-area: mainIs;
+  background-image: url(../../img/isesion.png); }
+  .containerIs .mainIs .text-cambios {
+    color: white;
+    font-family: 'Kanit', sans-serif;
+    text-shadow: 0 2px 3px rgba(0, 0, 0, 0.6); }
+  .containerIs .mainIs .boton {
+    background-color: #f78ef7; }
+  .containerIs .mainIs .links {
+    color: #9393ff; }
+  .containerIs .mainIs .color-caja {
+    opacity: 0.3; }
+
 .container {
   height: 100vh;
   display: grid;
@@ -649,10 +805,20 @@ footer {
   grid-template-rows: 0.4fr 1.6fr 1.2fr 1.2fr 1.2fr 0.4;
   grid-template-areas: "header" "fondo" "sectioni2" "mainId" "sectioni3" "footer"; }
 
+.containerIs {
+  position: relative;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.5fr 3.5fr 0.5fr;
+  grid-template-areas: "header" "mainIs" "footer"; }
+
 @media only screen and (min-width: 500px) {
   .container header div .logo {
     width: 45%; }
   .containerIdiomas header div .logo {
+    width: 45%; }
+  .containerIs header div .logo {
     width: 45%; }
   .section2 {
     min-width: 100% !important; }
@@ -943,17 +1109,61 @@ footer {
       font-family: 'Kanit', sans-serif;
       color: #120b0c;
       font-weight: 600; }
+  .containerIs {
+    position: relative; }
+    .containerIs .header {
+      position: sticky;
+      top: 0; }
+      .containerIs .header div .logo {
+        width: 40%;
+        padding-left: 15px; }
+      .containerIs .header nav ul li .imgMenu {
+        display: none; }
+      .containerIs .header .stickyMenu {
+        display: flex !important;
+        position: sticky;
+        top: 0;
+        max-width: 100%;
+        min-width: fit-content; }
+        .containerIs .header .stickyMenu .menu {
+          display: flex;
+          grid-area: menu;
+          padding: 2px;
+          background-color: black;
+          text-align: center;
+          list-style: none;
+          display: flex;
+          flex-flow: row nowrap;
+          align-self: center;
+          min-width: fit-content; }
+          .containerIs .header .stickyMenu .menu li {
+            display: flex;
+            background-color: black;
+            display: inline-block;
+            padding: 10px;
+            margin: 5px; }
+            .containerIs .header .stickyMenu .menu li:hover {
+              transform: scale(1.2); }
+              .containerIs .header .stickyMenu .menu li:hover ul {
+                display: none; }
+            .containerIs .header .stickyMenu .menu li a {
+              display: flex;
+              color: #fafafa;
+              text-decoration: none;
+              text-transform: uppercase;
+              font-size: 1rem;
+              font-family: Arial, Helvetica, sans-serif; }
   footer {
     grid-area: footer;
     width: 100%;
-    height: 80px;
+    height: 50px;
     background-color: black;
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
-    gap: 50px; }
+    gap: 30px; }
     footer a .fa-brands {
-      padding: 10px;
-      font-size: 20px;
-      width: 40px; } }
+      padding: 5px;
+      font-size: 15px;
+      width: 25px; } }

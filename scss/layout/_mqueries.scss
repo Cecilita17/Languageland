@@ -1,4 +1,3 @@
-//mobile
 
 //grids de index
 .container{
@@ -29,6 +28,18 @@
                         "footer";
 }
 
+// grid de Iniciar sesión
+.containerIs{
+    position: relative;
+    height: 100vh ;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 3.5fr 0.5fr;
+    grid-template-areas:"header"
+                        "mainIs"
+                        "footer";
+}
+
 @media only screen and (min-width: 500px){
     .container{
         header{
@@ -40,6 +51,15 @@
         }
     }
     .containerIdiomas{
+        header{
+            div{
+                .logo{
+                    width: 45%;
+                }
+            }
+        }
+    }
+    .containerIs{
         header{
             div{
                 .logo{
@@ -468,22 +488,90 @@
         }
     }
 
+    //Iniciar sesión
+    .containerIs{
+        position: relative;
+        .header{
+            position: sticky;
+            top: 0;
+            div{
+                .logo{
+                    width: 40%;
+                    padding-left: 15px;
+                }
+            }
+        
+            nav{
+                
+                ul{
+                    
+                    li{
+                        .imgMenu{
+                            display: none;
+                        }
+                    }
+                }
+            }
+
+            .stickyMenu{
+                display: flex !important ;
+                position: sticky;
+                top: 0;
+                max-width: 100% ; 
+                min-width: fit-content;
+                .menu{
+                    display: flex;
+                    grid-area: menu; 
+                    padding: 2px;
+                    background-color:black;
+                    text-align: center;
+                    list-style: none;
+                    display: flex;
+                    flex-flow: row nowrap;
+                    align-self: center;
+                    min-width: fit-content ;
+                    li{
+                        display: flex;
+                        background-color:black;
+                        display: inline-block;
+                        padding: 10px;
+                        margin: 5px;
+                        &:hover{
+                            transform: scale(1.2);
+                            ul{
+                                display: none;
+                            }
+                        }
+                        a{
+                            display: flex;
+                            color: rgb(250, 250, 250);
+                            text-decoration: none;
+                            text-transform: uppercase;
+                            font-size: 1rem;
+                            font-family: Arial, Helvetica, sans-serif;
+                        }
+                    }
+                }
+            }
+        } 
+    }
+
     //footer
     footer{
         grid-area: footer;
         width: 100%;
-        height: 80px;
+        height: 50px;
         background-color: black ;
         display: flex;
         flex-flow: row nowrap;
         justify-content: center ;
         align-items: center ;
-        gap: 50px ;
+        gap: 30px ;
         a{
             .fa-brands{
-                padding: 10px;
-                font-size: 20px;
-                width: 40px;
+                padding: 5px;
+                font-size: 15px;
+                width: 25px;
             }
         }
     }
