@@ -1,8 +1,9 @@
 .containerIdiomas{
     .fondo-titulo{
         grid-area: fondo;
+        @import "utilities/mapas";
         .divHo{
-            background-image: url(../img/holandaa.jpg);
+            background-image: map-get($map: $imgFondo , $key: holandes);
             background-size: cover;
             background-repeat: no-repeat;
             background-position: fixed;

@@ -100,6 +100,7 @@
     }
 
     //section1
+    @import "utilities/extend";
     .section1{
         grid-area: section1;
         padding-left: 1%;
@@ -118,12 +119,7 @@
             color: rgb(255, 254, 254);
         }
         article{
-            display: flex;
-            flex-flow: column nowrap;
-            justify-content: center;
-            align-items: center !important;
-            padding-left: 7%;
-            padding-right: 7%;
+            @extend %article;
             .div1{
                 display: flex;
                 flex-flow: column nowrap;
@@ -131,11 +127,7 @@
                 align-items: center;
                 margin-bottom: 7%;
                 h3{
-                    margin-top: 10%;
-                    margin-bottom: 3%;
-                    font-size: 1.5rem;
-                    text-align: center;
-                    color: white;
+                    @extend %h3-h4;
                 }
                 p{
                     margin-bottom: 3%;
@@ -148,12 +140,7 @@
             }
         }
         .articleMedio{
-            display: flex;
-            flex-flow: column nowrap;
-            justify-content: center;
-            align-items: center !important;
-            padding-left: 7%;
-            padding-right: 7%;
+            @extend %article;
             .divMedio{
                 display: flex;
                 flex-flow: column nowrap;
@@ -161,11 +148,7 @@
                 align-items: center;
                 margin-bottom: 7%;
                 h3{
-                    margin-top: 10%;
-                    margin-bottom: 3%;
-                    font-size: 1.5rem;
-                    text-align: center;
-                    color: white;
+                    @extend %h3-h4;
                 }
                 p{
                     margin-bottom: 3%;
@@ -178,12 +161,7 @@
             }
         }
         article{
-            display: flex;
-            flex-flow: column nowrap;
-            justify-content: center;
-            align-items: center !important;
-            padding-left: 7%;
-            padding-right: 7%;
+            @extend %article;
             .div1{
                 display: flex;
                 flex-flow: column nowrap;
@@ -191,11 +169,7 @@
                 align-items: center;
                 margin-bottom: 7%;
                 h4{
-                    margin-top: 10%;
-                    margin-bottom: 3%;
-                    font-size: 1.5rem;
-                    text-align: center;
-                    color: white;
+                    @extend %h3-h4;
                 }
                 p{
                     margin-bottom: 3%;

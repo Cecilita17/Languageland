@@ -1,8 +1,9 @@
 .containerIdiomas{
     .fondo-titulo{
         grid-area: fondo;
+        @import "utilities/mapas";
         .divRu{
-            background-image: url(../img/russiamobile.png);
+            background-image: map-get($map: $imgFondo , $key: ruso );
             background-size: cover;
             background-repeat: no-repeat;
             background-position: fixed;

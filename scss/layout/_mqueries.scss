@@ -488,12 +488,13 @@
         }
     }
 
-    //Iniciar sesión
+    //Iniciar sesión, registrarse, contacto
     .containerIs{
         position: relative;
         .header{
             position: sticky;
             top: 0;
+            height: fit-content;
             div{
                 .logo{
                     width: 40%;
@@ -523,6 +524,7 @@
                     display: flex;
                     grid-area: menu; 
                     padding: 2px;
+                    margin-bottom: 5px;
                     background-color:black;
                     text-align: center;
                     list-style: none;

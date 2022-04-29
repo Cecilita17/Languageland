@@ -1,0 +1,17 @@
+/*extends para section1 del index */
+%h3-h4{
+    margin-top: 10%;
+    margin-bottom: 3%;
+    font-size: 1.5rem;
+    text-align: center;
+    color: white;
+}
+
+%article{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center !important;
+    padding-left: 7%;
+    padding-right: 7%;
+}

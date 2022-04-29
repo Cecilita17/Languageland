@@ -1,8 +1,9 @@
 .containerIdiomas{
     .fondo-titulo{
         grid-area: fondo;
+        @import "utilities/mapas";
         .divFr{
-            background-image: url(../img/francemobile.png);
+            background-image: map-get($map: $imgFondo, $key: frances );
             background-size: cover;
             background-repeat: no-repeat;
             background-position: fixed;

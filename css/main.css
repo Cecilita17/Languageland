@@ -126,209 +126,184 @@ footer {
   padding: 0%;
   box-sizing: border-box; }
 
-.container .mainI {
-  grid-area: mainI;
-  min-height: auto;
-  min-width: auto;
-  background-color: white; }
-  .container .mainI .principio {
-    background-color: none;
-    background-image: url(../img/bg6.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: white;
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: space-around;
-    align-items: center;
+.container {
+  /*extends para section1 del index */ }
+  .container .mainI {
+    grid-area: mainI;
     min-height: auto;
-    min-width: auto; }
-    .container .mainI .principio h1 {
-      margin-top: 10%;
-      padding-bottom: 4%;
-      padding-left: 3%;
-      padding-right: 3%;
-      font-size: 2.7rem;
-      text-align: center;
+    min-width: auto;
+    background-color: white; }
+    .container .mainI .principio {
       background-color: none;
-      text-shadow: 0 2px 3px rgba(0, 0, 0, 0.6);
-      font-family: 'Kanit', sans-serif; }
-    .container .mainI .principio h2 {
-      background-color: none;
-      margin-bottom: 3%;
-      padding: 1px;
-      font-size: 1rem;
-      text-align: center;
+      background-image: url(../img/bg6.png);
+      background-repeat: no-repeat;
+      background-size: cover;
       color: white;
-      text-shadow: 0 2px 3px rgba(0, 0, 0, 0.6);
-      font-family: 'Kanit', sans-serif; }
-    .container .mainI .principio .imagenes {
-      height: auto;
-      background-color: none;
       display: flex;
-      flex-flow: row nowrap;
-      justify-content: center;
-      align-items: center; }
-      .container .mainI .principio .imagenes div {
+      flex-flow: column wrap;
+      justify-content: space-around;
+      align-items: center;
+      min-height: auto;
+      min-width: auto; }
+      .container .mainI .principio h1 {
+        margin-top: 10%;
+        padding-bottom: 4%;
+        padding-left: 3%;
+        padding-right: 3%;
+        font-size: 2.7rem;
+        text-align: center;
+        background-color: none;
+        text-shadow: 0 2px 3px rgba(0, 0, 0, 0.6);
+        font-family: 'Kanit', sans-serif; }
+      .container .mainI .principio h2 {
+        background-color: none;
+        margin-bottom: 3%;
+        padding: 1px;
+        font-size: 1rem;
+        text-align: center;
+        color: white;
+        text-shadow: 0 2px 3px rgba(0, 0, 0, 0.6);
+        font-family: 'Kanit', sans-serif; }
+      .container .mainI .principio .imagenes {
+        height: auto;
+        background-color: none;
         display: flex;
-        flex-flow: column nowrap;
+        flex-flow: row nowrap;
         justify-content: center;
-        align-items: center;
-        gap: 10px; }
-        .container .mainI .principio .imagenes div a {
-          color: #f7f0f0;
+        align-items: center; }
+        .container .mainI .principio .imagenes div {
           display: flex;
-          flex-flow: column-reverse nowrap;
+          flex-flow: column nowrap;
           justify-content: center;
           align-items: center;
-          margin: 10px;
-          text-decoration: none;
-          text-align: left;
-          list-style: none;
-          font-family: 'Kanit', sans-serif;
-          font-size: 1rem; }
-          .container .mainI .principio .imagenes div a .imgUk {
-            width: 30%; }
-          .container .mainI .principio .imagenes div a .imgIt {
-            width: 30%; }
-          .container .mainI .principio .imagenes div a .imgFr {
-            width: 30%; }
-          .container .mainI .principio .imagenes div a .imgGe {
-            width: 30%; }
-          .container .mainI .principio .imagenes div a .imgHo {
-            width: 30%; }
-          .container .mainI .principio .imagenes div a .imgRu {
-            width: 30%; }
-
-.container .section1 {
-  grid-area: section1;
-  padding-left: 1%;
-  padding-right: 1%;
-  padding-top: 5%;
-  background-image: linear-gradient(to bottom, black, #6c6c6c, #a8a6a6, white);
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: space-around;
-  align-items: center; }
-  .container .section1 h3 {
+          gap: 10px; }
+          .container .mainI .principio .imagenes div a {
+            color: #f7f0f0;
+            display: flex;
+            flex-flow: column-reverse nowrap;
+            justify-content: center;
+            align-items: center;
+            margin: 10px;
+            text-decoration: none;
+            text-align: left;
+            list-style: none;
+            font-family: 'Kanit', sans-serif;
+            font-size: 1rem; }
+            .container .mainI .principio .imagenes div a .imgUk {
+              width: 30%; }
+            .container .mainI .principio .imagenes div a .imgIt {
+              width: 30%; }
+            .container .mainI .principio .imagenes div a .imgFr {
+              width: 30%; }
+            .container .mainI .principio .imagenes div a .imgGe {
+              width: 30%; }
+            .container .mainI .principio .imagenes div a .imgHo {
+              width: 30%; }
+            .container .mainI .principio .imagenes div a .imgRu {
+              width: 30%; }
+  .container .section1 article .div1 h3, .container .section1 .articleMedio .divMedio h3, .container .section1 article .div1 h4 {
+    margin-top: 10%;
+    margin-bottom: 3%;
+    font-size: 1.5rem;
     text-align: center;
-    font-size: 2rem;
-    margin-bottom: 2%;
-    margin-top: 8%;
-    color: #fffefe; }
-  .container .section1 article {
+    color: white; }
+  .container .section1 article, .container .section1 .articleMedio {
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center !important;
     padding-left: 7%;
     padding-right: 7%; }
+  .container .section1 {
+    grid-area: section1;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-top: 5%;
+    background-image: linear-gradient(to bottom, black, #6c6c6c, #a8a6a6, white);
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center; }
+    .container .section1 h3 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 2%;
+      margin-top: 8%;
+      color: #fffefe; }
     .container .section1 article .div1 {
       display: flex;
       flex-flow: column nowrap;
       justify-content: center !important;
       align-items: center;
       margin-bottom: 7%; }
-      .container .section1 article .div1 h3 {
-        margin-top: 10%;
-        margin-bottom: 3%;
-        font-size: 1.5rem;
-        text-align: center;
-        color: white; }
       .container .section1 article .div1 p {
         margin-bottom: 3%;
         font-size: 1.2rem;
         color: white; }
     .container .section1 article .talking {
       width: 100%; }
-  .container .section1 .articleMedio {
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center !important;
-    padding-left: 7%;
-    padding-right: 7%; }
     .container .section1 .articleMedio .divMedio {
       display: flex;
       flex-flow: column nowrap;
       justify-content: center !important;
       align-items: center;
       margin-bottom: 7%; }
-      .container .section1 .articleMedio .divMedio h3 {
-        margin-top: 10%;
-        margin-bottom: 3%;
-        font-size: 1.5rem;
-        text-align: center;
-        color: white; }
       .container .section1 .articleMedio .divMedio p {
         margin-bottom: 3%;
         font-size: 1.2rem;
         color: white; }
     .container .section1 .articleMedio .ritmo {
       width: 100%; }
-  .container .section1 article {
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center !important;
-    padding-left: 7%;
-    padding-right: 7%; }
     .container .section1 article .div1 {
       display: flex;
       flex-flow: column nowrap;
       justify-content: center !important;
       align-items: center;
       margin-bottom: 7%; }
-      .container .section1 article .div1 h4 {
-        margin-top: 10%;
-        margin-bottom: 3%;
-        font-size: 1.5rem;
-        text-align: center;
-        color: white; }
       .container .section1 article .div1 p {
         margin-bottom: 3%;
         font-size: 1.2rem;
         color: white; }
     .container .section1 article .ayuda {
       width: 100%; }
-
-.container .section2 {
-  grid-area: section2;
-  min-height: 400px;
-  background-color: #041C32;
-  color: white;
-  font-family: 'Kanit', sans-serif;
-  text-shadow: 0 2px 3px rgba(0, 0, 0, 0.6);
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: space-evenly; }
-  .container .section2 article h4:first-child {
-    font-size: 2rem;
-    text-transform: uppercase;
-    text-align: center;
-    margin: 0px;
-    font-family: 'Kanit', sans-serif; }
-  .container .section2 article h4:last-child {
-    text-align: center;
-    margin: 5% 35%;
+  .container .section2 {
+    grid-area: section2;
+    min-height: 400px;
+    background-color: #041C32;
+    color: white;
     font-family: 'Kanit', sans-serif;
-    font-weight: 600;
-    text-align: center;
-    font-size: 1.5rem;
-    background-color: #FF8E00;
-    padding: 2% 3%;
-    border: 1px solid none;
-    border-radius: 50px; }
-    .container .section2 article h4:last-child:hover {
-      transform: scale(1.1);
-      background-color: #fea941; }
-    .container .section2 article h4:last-child a {
-      text-decoration: none;
-      color: white;
-      text-shadow: 0 2px 3px rgba(0, 0, 0, 0.6); }
+    text-shadow: 0 2px 3px rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly; }
+    .container .section2 article h4:first-child {
+      font-size: 2rem;
+      text-transform: uppercase;
+      text-align: center;
+      margin: 0px;
+      font-family: 'Kanit', sans-serif; }
+    .container .section2 article h4:last-child {
+      text-align: center;
+      margin: 5% 35%;
+      font-family: 'Kanit', sans-serif;
+      font-weight: 600;
+      text-align: center;
+      font-size: 1.5rem;
+      background-color: #FF8E00;
+      padding: 2% 3%;
+      border: 1px solid none;
+      border-radius: 50px; }
+      .container .section2 article h4:last-child:hover {
+        transform: scale(1.1);
+        background-color: #fea941; }
+      .container .section2 article h4:last-child a {
+        text-decoration: none;
+        color: white;
+        text-shadow: 0 2px 3px rgba(0, 0, 0, 0.6); }
 
 .containerIdiomas .fondo-titulo {
-  grid-area: fondo; }
+  grid-area: fondo;
+  /* mapa a imagenes de fondo para cada idioma*/ }
   .containerIdiomas .fondo-titulo .divIn {
     background-image: url(../img/bigbmobile.png);
     background-size: cover;
@@ -440,7 +415,8 @@ footer {
       font-family: 'Kanit', sans-serif; }
 
 .containerIdiomas .fondo-titulo {
-  grid-area: fondo; }
+  grid-area: fondo;
+  /* mapa a imagenes de fondo para cada idioma*/ }
   .containerIdiomas .fondo-titulo .divAl {
     background-image: url(../img/alemania.png);
     background-size: cover;
@@ -479,7 +455,8 @@ footer {
         text-shadow: 0 2px 3px rgba(0, 0, 0, 0.6); }
 
 .containerIdiomas .fondo-titulo {
-  grid-area: fondo; }
+  grid-area: fondo;
+  /* mapa a imagenes de fondo para cada idioma*/ }
   .containerIdiomas .fondo-titulo .divFr {
     background-image: url(../img/francemobile.png);
     background-size: cover;
@@ -518,7 +495,8 @@ footer {
         text-shadow: 0 2px 3px rgba(0, 0, 0, 0.6); }
 
 .containerIdiomas .fondo-titulo {
-  grid-area: fondo; }
+  grid-area: fondo;
+  /* mapa a imagenes de fondo para cada idioma*/ }
   .containerIdiomas .fondo-titulo .divIt {
     background-image: url(../img/italia.jpg);
     background-size: cover;
@@ -557,7 +535,8 @@ footer {
         text-shadow: 0 2px 3px rgba(0, 0, 0, 0.6); }
 
 .containerIdiomas .fondo-titulo {
-  grid-area: fondo; }
+  grid-area: fondo;
+  /* mapa a imagenes de fondo para cada idioma*/ }
   .containerIdiomas .fondo-titulo .divRu {
     background-image: url(../img/russiamobile.png);
     background-size: cover;
@@ -596,7 +575,8 @@ footer {
         text-shadow: 0 2px 3px rgba(0, 0, 0, 0.6); }
 
 .containerIdiomas .fondo-titulo {
-  grid-area: fondo; }
+  grid-area: fondo;
+  /* mapa a imagenes de fondo para cada idioma*/ }
   .containerIdiomas .fondo-titulo .divHo {
     background-image: url(../img/holandaa.jpg);
     background-size: cover;
@@ -777,6 +757,7 @@ svg {
     display: none; }
 
 .containerIs .mainIs {
+  height: 100vh;
   grid-area: mainIs;
   background-image: url(../../img/isesion.png); }
   .containerIs .mainIs .text-cambios {
@@ -1113,7 +1094,8 @@ svg {
     position: relative; }
     .containerIs .header {
       position: sticky;
-      top: 0; }
+      top: 0;
+      height: fit-content; }
       .containerIs .header div .logo {
         width: 40%;
         padding-left: 15px; }
@@ -1129,6 +1111,7 @@ svg {
           display: flex;
           grid-area: menu;
           padding: 2px;
+          margin-bottom: 5px;
           background-color: black;
           text-align: center;
           list-style: none;
