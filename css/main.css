@@ -10,8 +10,8 @@
   justify-content: space-between;
   align-items: center;
   list-style: none; }
-  .header div .logo {
-    width: 55%;
+  .header a .logo {
+    width: 40%;
     padding-left: 15px; }
   .header nav {
     justify-self: flex-end; }
@@ -206,7 +206,8 @@ footer {
     margin-bottom: 3%;
     font-size: 1.5rem;
     text-align: center;
-    color: white; }
+    color: #FF8E00;
+    text-shadow: 0 2px 3px rgba(0, 0, 0, 0.6); }
   .container .section1 article, .container .section1 .articleMedio {
     display: flex;
     flex-flow: column nowrap;
@@ -219,7 +220,7 @@ footer {
     padding-left: 1%;
     padding-right: 1%;
     padding-top: 5%;
-    background-image: linear-gradient(to bottom, black, #6c6c6c, #a8a6a6, white);
+    background-image: linear-gradient(to bottom, black, #082e52, #125ba0, #041C32);
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-around;
@@ -578,7 +579,7 @@ footer {
   grid-area: fondo;
   /* mapa a imagenes de fondo para cada idioma*/ }
   .containerIdiomas .fondo-titulo .divHo {
-    background-image: url(../img/holandaa.jpg);
+    background-image: url(../img/holandaa.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: fixed;
