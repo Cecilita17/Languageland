@@ -715,7 +715,8 @@ svg {
     .containerIs .header nav ul {
       list-style: none;
       font-size: 0;
-      min-width: fit-content !important; }
+      min-width: fit-content !important;
+      margin-bottom: 0%; }
       .containerIs .header nav ul li {
         display: inline-block;
         width: 25%;
