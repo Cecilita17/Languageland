@@ -767,7 +767,9 @@ svg {
     font-family: 'Kanit', sans-serif;
     text-shadow: 0 2px 3px rgba(0, 0, 0, 0.6); }
   .containerIs .mainIs .boton {
-    background-color: #f78ef7; }
+    background-color: #f78ef7;
+    padding: 5px !important;
+    margin-top: 2%; }
   .containerIs .mainIs .links {
     color: #9393ff; }
   .containerIs .mainIs .color-caja {
@@ -913,7 +915,7 @@ svg {
       .container .section1 article {
         background-color: white;
         color: black;
-        min-height: 450px;
+        min-height: 350px;
         display: flex;
         flex-flow: row-reverse nowrap;
         justify-content: center;
@@ -940,6 +942,11 @@ svg {
             color: black; }
         .container .section1 article .talking {
           width: 30%; }
+          .container .section1 article .talking:hover {
+            opacity: 0.8;
+            filter: alpha(opacity=80);
+            /* For IE8 and earlier */
+            box-shadow: 0 0 0px #000000; }
       .container .section1 .articleMedio {
         display: flex;
         flex-flow: row nowrap !important;
@@ -965,10 +972,15 @@ svg {
             color: black; }
         .container .section1 .articleMedio .ritmo {
           width: 30%; }
+          .container .section1 .articleMedio .ritmo:hover {
+            opacity: 0.8;
+            filter: alpha(opacity=80);
+            /* For IE8 and earlier */
+            box-shadow: 0 0 0px #000000; }
       .container .section1 article {
         background-color: white;
         color: black;
-        min-height: 450px;
+        min-height: 350px;
         display: flex;
         flex-flow: row-reverse nowrap;
         justify-content: center;
@@ -995,6 +1007,11 @@ svg {
             color: black; }
         .container .section1 article .ayuda {
           width: 30%; }
+          .container .section1 article .ayuda:hover {
+            opacity: 0.8;
+            filter: alpha(opacity=80);
+            /* For IE8 and earlier */
+            box-shadow: 0 0 0px #000000; }
     .container .section2 article h4:first-of-type {
       padding-top: 5%;
       font-size: 2.5rem; }

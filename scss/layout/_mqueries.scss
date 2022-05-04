@@ -232,7 +232,7 @@
             article{
                 background-color: rgb(255, 255, 255);
                 color: black ;
-                min-height: 450px ;
+                min-height: 350px ;
                 display: flex;
                 flex-flow: row-reverse nowrap;
                 justify-content: center ;
@@ -262,6 +262,11 @@
                 }
                 .talking{
                     width: 30%;
+                    &:hover{
+                        opacity:0.8 ;
+                        filter:alpha(opacity=80) ; /* For IE8 and earlier */
+                        box-shadow: 0 0 0px #000000 ;
+                    }
                 }
             }
             .articleMedio{
@@ -292,12 +297,17 @@
                 }
                 .ritmo{
                     width: 30%;
+                    &:hover{
+                        opacity:0.8 ;
+                        filter:alpha(opacity=80) ; /* For IE8 and earlier */
+                        box-shadow: 0 0 0px #000000 ;
+                    }
                 }
             }
             article{
                 background-color: rgb(255, 255, 255);
                 color: black ;
-                min-height: 450px ;
+                min-height: 350px ;
                 display: flex;
                 flex-flow: row-reverse nowrap;
                 justify-content: center ;
@@ -327,6 +337,11 @@
                 }
                 .ayuda{
                     width: 30%;
+                    &:hover{
+                        opacity:0.8 ;
+                        filter:alpha(opacity=80) ; /* For IE8 and earlier */
+                        box-shadow: 0 0 0px #000000 ;
+                    }
                 }
             }
         }
