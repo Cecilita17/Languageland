@@ -82,7 +82,7 @@
         }
     }
     .mainIs{
-        height: 100vh;
+        min-height: auto;
         grid-area: mainIs;
         background-image: url(../../img/isesion.png);
         .text-cambios{

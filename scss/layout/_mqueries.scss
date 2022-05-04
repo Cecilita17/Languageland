@@ -83,6 +83,17 @@
         height: auto;
     }    
     
+    /*main bootstrap*/
+    .mainIs{
+        height: 100%;
+    }
+}
+
+@media only screen and (min-width:765px){
+    /*main bootstrap*/
+    .mainIs{
+        height: 100vh;
+    }
 }
 
 @media only screen and (min-width: 950px){
@@ -556,6 +567,9 @@
                 }
             }
         } 
+    }
+    .mainIs{
+        height: 100vh;
     }
 
     //footer
