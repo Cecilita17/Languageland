@@ -36,7 +36,7 @@
                 font-size: 2.7rem;
                 text-align: center;
                 background-color: none;
-                text-shadow: 0 2px 3px rgba(0, 0, 0, 0.60);
+                text-shadow: $text-shadow;
                 font-family: 'Kanit', sans-serif;
             }
             h2{
@@ -46,7 +46,7 @@
                 font-size: 1rem;
                 text-align: center;
                 color:  white;
-                text-shadow: 0 2px 3px rgba(0, 0, 0, 0.60);
+                text-shadow: $text-shadow;
                 font-family: 'Kanit', sans-serif;
             }
             .imagenes{
@@ -190,7 +190,7 @@
         background-color: #041C32;
         color: white;
         font-family: 'Kanit', sans-serif;
-        text-shadow: 0 2px 3px rgba(0, 0, 0, 0.60);
+        text-shadow: $text-shadow;
         display: flex;
         flex-flow: column nowrap;
         justify-content: space-evenly;
@@ -221,7 +221,7 @@
                     a{
                         text-decoration: none;
                         color: white;
-                        text-shadow: 0 2px 3px rgba(0, 0, 0, 0.6);
+                        text-shadow: $text-shadow;
                     }
                 }
             }

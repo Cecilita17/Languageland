@@ -264,7 +264,7 @@
                     width: 30%;
                     &:hover{
                         opacity:0.8 ;
-                        filter:alpha(opacity=80) ; /* For IE8 and earlier */
+                        filter:alpha(opacity=80) ; 
                         box-shadow: 0 0 0px #000000 ;
                     }
                 }

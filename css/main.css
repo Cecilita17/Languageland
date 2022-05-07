@@ -708,7 +708,7 @@ svg {
   align-items: center;
   list-style: none; }
   .containerIs .header a .logo {
-    width: 45%;
+    width: 60%;
     padding-left: 15px; }
   .containerIs .header nav {
     justify-self: flex-end; }
@@ -945,7 +945,6 @@ svg {
           .container .section1 article .talking:hover {
             opacity: 0.8;
             filter: alpha(opacity=80);
-            /* For IE8 and earlier */
             box-shadow: 0 0 0px #000000; }
       .container .section1 .articleMedio {
         display: flex;
